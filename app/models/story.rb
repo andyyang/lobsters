@@ -19,6 +19,7 @@ class Story < ActiveRecord::Base
   attr_accessible :title, :description, :tags_a, :moderation_reason
 
   before_create :assign_short_id
+  before_create :fetch_story_cache
   before_save :log_moderation, :check_tags
   after_create :mark_submitter
   after_save :deal_with_tags
@@ -27,6 +28,7 @@ class Story < ActiveRecord::Base
     indexes url
     indexes title
     indexes description
+    indexes story_cache
     indexes user.username, :as => :author
     indexes tags(:tag), :as => :tags
 
@@ -237,6 +239,12 @@ class Story < ActiveRecord::Base
     end
 
     @fetched_content
+  end
+
+  def fetch_story_cache
+    if self.url.present?
+      self.story_cache = Diffbot.get_url_text(self.url)
+    end
   end
 
   def calculated_hotness

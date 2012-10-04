@@ -17,6 +17,9 @@
         <% if story.markeddown_description.present? %>
           <description><%= raw coder.encode(story.markeddown_description,
             :decimal) %></description>
+        <% elsif story.story_cache.present? %>
+          <description><%= raw coder.encode(simple_format(story.story_cache),
+            :decimal) %></description>
         <% end %>
         <% story.taggings.each do |tagging| %>
           <category><%= tagging.tag.tag %></category>

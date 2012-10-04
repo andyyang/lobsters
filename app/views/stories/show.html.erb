@@ -1,14 +1,30 @@
 <ol class="stories">
-	<%= render :partial => "stories/listdetail",
+  <%= render :partial => "stories/listdetail",
     :locals => { :story => @story } %>
 </ol>
 
 <div class="story_content">
-	<% if @story.markeddown_description.present? %>
-		<div class="story_text">
-			<%= raw @story.markeddown_description %>
-		</div>
-	<% end %>
+  <% if @story.markeddown_description.present? %>
+    <div class="story_text">
+      <%= raw @story.markeddown_description %>
+    </div>
+  <% elsif @story.story_cache.present? %>
+    <a id="story_text_expander">View Cached Story Text</a>
+    <div class="story_text collapsed_story_text">
+      <p>
+      <em>All story content copyright of its respective owner.</em>
+      </p>
+      <%= simple_format(@story.story_cache) %>
+    </div>
+
+    <script>
+      $("#story_text_expander").click(function() {
+        $(".story_text").css({ "display": "block" });
+        $("#story_text_expander").remove();
+        return false;
+      });
+    </script>
+  <% end %>
 
   <p></p>
   <% if @user && !@story.is_gone? && !@story.previewing %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120919195401) do
+ActiveRecord::Schema.define(:version => 20121004153529) do
 
   create_table "comments", :force => true do |t|
     t.datetime "created_at",                                                                          :null => false
@@ -89,6 +89,7 @@ ActiveRecord::Schema.define(:version => 20120919195401) do
     t.integer  "is_moderated",           :limit => 1,                                   :default => 0,   :null => false
     t.decimal  "hotness",                               :precision => 20, :scale => 10, :default => 0.0, :null => false
     t.text     "markeddown_description"
+    t.text     "story_cache"
   end
 
   add_index "stories", ["hotness"], :name => "hotness_idx"

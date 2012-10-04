@@ -528,6 +528,13 @@ div.story_text {
 div.story_text p {
 	margin: 0.75em 0;
 }
+div.collapsed_story_text {
+	display: none;
+}
+a#story_text_expander {
+	display: block;
+	font-style: italic;
+}
 
 div.comment_text {
 	max-width: 700px;
