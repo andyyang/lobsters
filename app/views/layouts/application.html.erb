@@ -37,17 +37,17 @@
         title="<%= Rails.application.name %> (<%= @traffic.to_i %>)"></a>
 
         <% links = {
-          "/" => "Home",
-          "/newest" => "Newest",
-          "/comments" => "Comments"
+          "/" => t(:home),
+          "/newest" => t(:newest), 
+          "/comments" => t(:comments) 
         } %>
 
         <% if @user %>
-          <% links.merge!({ "/threads" => "Your Threads",
-            "/stories/new" => "Submit Story" }) %>
+          <% links.merge!({ "/threads" => t(:threads),
+            "/stories/new" => t(:story_new) }) %>
         <% end %>
 
-        <% links.merge!({ "/search" => "Search" }) %>
+        <% links.merge!({ "/search" => t(:search) }) %>
 
         <% if @cur_url.present? && !links.keys.include?(@cur_url) &&
         @heading.present? %>
@@ -67,26 +67,26 @@
       <div id="headerright" class="<%= @user ? "loggedin" : "" %>">
         <span class="headerlinks">
         <a href="/filters" <%= @cur_url == "/filters" ?
-          raw("class=\"cur_url\"") : "" %>>Filters</a>
+          raw("class=\"cur_url\"") : "" %>><%= t(:filters) %></a>
         <% if @user %>
           <% if (count = @user.unread_message_count) > 0 %>
             <a href="/messages" class="new_messages <%= @cur_url == "/messages" ?
-              "cur_url" : "" %>"><%= count %> New Message<%= count == 1 ? "" :
-              "s" %></a>
+              "cur_url" : "" %>"><%= count %> <%= count == 1 ? t(:new_message) :
+              t(:new_messages) %></a>
           <% else %>
             <a href="/messages" <%= @cur_url == "/messages" ?
-              raw("class=\"cur_url\"") : "" %>>Messages</a>
+              raw("class=\"cur_url\"") : "" %>><%= t(:messages) %></a>
           <% end %>
 
           <a href="/settings" <%= @cur_url == "/settings" ?
             raw("class=\"cur_url\"") : "" %>><%= @user.username %>
             (<%= @user.karma %>)</a>
 
-          <%= link_to "Logout", { :controller => "login", :action => "logout" },
-            :data => { :confirm => "Are you sure you want to logout?" },
+          <%= link_to t(:logout), { :controller => "login", :action => "logout" },
+            :data => { :confirm => t(:logout_confirm) },
             :method => "post" %>
         <% else %>
-          <a href="/login">Login</a>
+          <a href="/login"><%= t(:login) %></a>
         <% end %>
         </span>
       </div>
@@ -104,13 +104,13 @@
       <%= yield %>
 
       <div id="footer">
-        <a href="/moderations">Moderation Log</a>
+        <a href="/moderations"><%= t(:moderation_log) %></a>
         <% if @user && !@user.is_new? &&
         (iqc = InvitationRequest.verified_count) > 0 %>
-          <a href="/invitations">Invitation Queue (<%= iqc %>)</a>
+          <a href="/invitations"><%= t(:inviation_queue) %> (<%= iqc %>)</a>
         <% end %>
-        <a href="/privacy">Privacy</a>
-        <a href="/about">About</a>
+        <a href="/privacy"><%= t(:privacy) %></a>
+        <a href="/about"><%= t(:about) %></a>
       </div>
       <div class="clear"></div>
     </div>

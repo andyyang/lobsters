@@ -2,4 +2,20 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  home: "Home"
+  newest: "Newest"
+  comments: "Comments"
+  threads: "Your Threads"
+  story_new: "Submit Story"
+  search: "Search"
+  filters: "Filters"
+  new_messages: "New Messages"
+  new_message: "New Message"
+  messages: "Messages"
+  logout: "Logout"
+  logout_confirm: "Are you sure you want to logout?"
+  login: "Login"
+  moderation_log: "Moderation Log"
+  inviation_queue: "Invitation Queue"
+  privacy: "Privacy"
+  about: "About"
