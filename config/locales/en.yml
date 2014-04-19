@@ -14,8 +14,19 @@ en:
   messages: "Messages"
   logout: "Logout"
   logout_confirm: "Are you sure you want to logout?"
-  login: "Login"
+  login_link: "Login"
   moderation_log: "Moderation Log"
   inviation_queue: "Invitation Queue"
   privacy: "Privacy"
   about: "About"
+  login:
+    index:
+      login: "Login"
+      email: "E-mail or Username:"
+      password: "Password:"
+      forget: "Forgot your password?"
+      reset: "Reset your password"
+      signup_html: "Not a user yet?  Signup is by invitation only to combat spam and increase
+              accountability.  If you know <a href='/u/'>a current user</a> of the site,
+              ask them for an invitation or <a href='/invitations/request'>request one
+              publicly</a>."
