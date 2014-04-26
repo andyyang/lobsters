@@ -26,7 +26,30 @@ en:
       password: "Password:"
       forget: "Forgot your password?"
       reset: "Reset your password"
-      signup_html: "Not a user yet?  Signup is by invitation only to combat spam and increase
-              accountability.  If you know <a href='/u/'>a current user</a> of the site,
-              ask them for an invitation or <a href='/invitations/request'>request one
-              publicly</a>."
+      current_user: "a current user"
+      request_invitation: "request one publicly"
+      signup_html: "Not a user yet?  Signup is by invitation only to combat spam and increase 
+              accountability.  If you know %{current_user} of the site,
+              ask them for an invitation or %{request_invitation}."
+    forgot_password:
+      reset: "Reset Password"
+      email: "E-mail or Username:"
+      note: "If you've forgotten your password, enter your e-mail address or username
+             below and instructions will be e-mailed to you."
+  invitations:
+    build:
+      request: "Request an Invitation"
+      existing_user: "existing user"
+      note_html: "If you don't know (or can't find) an %{existing_user} from
+            which to request an invitation, you can make a public request for one.  This
+            will display your name and memo to all other logged-in users who can then
+            send you an invitation if they recognize you."
+      instruction: "Your e-mail address must be valid and confirmed by visiting a URL e-mailed to
+            you before your request will be displayed.  Your e-mail address will not be
+            shown to any other users."
+      name: "Name:"
+      email: "E-mail Address:"
+      url: "URL:"
+      url_note: "URL to verify you (Personal website, Github account, etc.)"
+      request_invitation: "Request Invitation"
+

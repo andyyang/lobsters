@@ -24,7 +24,8 @@
     </p>
 
     <p>
-    <%= t('.signup_html') %>
+    <%= t('.signup_html', :current_user => link_to( t('.current_user'), u_path), 
+          :request_invitation => link_to( t('.request_invitation'), invitations_request_path)) %>
     </p>
   <% end %>
 </div>
