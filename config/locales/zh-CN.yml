@@ -44,3 +44,8 @@
       url: "URL:"
       url_note: "能够核实你的身份的URL(个人网站，微博，Github账号等。)"
       request_invitation: "请求邀请"
+  stories:
+    listdetail:
+      by: "由"
+      ago: "前"
+      comment: "评论"    

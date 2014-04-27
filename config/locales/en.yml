@@ -52,4 +52,9 @@ en:
       url: "URL:"
       url_note: "URL to verify you (Personal website, Github account, etc.)"
       request_invitation: "Request Invitation"
+  stories:
+    listdetail:
+      by: "by"
+      ago: "ago"
+      comment: "comment"
 
