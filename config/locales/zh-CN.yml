@@ -47,5 +47,5 @@
   stories:
     listdetail:
       by: "由"
-      ago: "前"
+      ago: "前发布"
       comment: "评论"    

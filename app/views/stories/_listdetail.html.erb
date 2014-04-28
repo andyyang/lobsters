@@ -41,9 +41,9 @@ class="story <%= story.vote == 1 ? "upvoted" : (story.vote == -1 ?
         by <a><%= story.user.username %></a>
         just now
       <% else %>
-        by <a href="/u/<%= story.user.username %>"><%= story.user.username
+        <%= t(".by") %> <a href="/u/<%= story.user.username %>"><%= story.user.username
           %></a> <%= raw(time_ago_in_words_label(story.created_at).
-          gsub(/^about /, "")) %> ago
+          gsub(/^about /, "")) %> <%= t(".ago") %>
 
         <% if story.is_editable_by_user?(@user) %>
           |
