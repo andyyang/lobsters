@@ -47,5 +47,8 @@
   stories:
     listdetail:
       by: "由"
-      ago: "前发布"
-      comment: "评论"    
+      just_now: "于刚才发布"
+      ago_html: "于%{create_time}前发布"
+      comment: "评论" 
+      comments: "评论" 
+      discuss: "讨论"

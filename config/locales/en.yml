@@ -55,6 +55,9 @@ en:
   stories:
     listdetail:
       by: "by"
-      ago: "ago"
+      just_now: "just now"
+      ago_html: "%{create_time} ago"
       comment: "comment"
+      comments: "comments"
+      discuss: "discuss"
 
