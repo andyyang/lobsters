@@ -41,13 +41,13 @@ class="comment <%= comment.current_vote ? (comment.current_vote[:vote] == 1 ?
         <% elsif comment.is_from_email? %>
           e-mailed
         <% end %>
-        <%= raw(time_ago_in_words_label(comment.has_been_edited? ?
-          comment.updated_at : comment.created_at).gsub(/^about /, "")) %> ago
+        <%= t(".ago_html", create_time: raw(time_ago_in_words_label(comment.has_been_edited? ?
+          comment.updated_at : comment.created_at).gsub(/^about /, ""))) %>
       <% end %>
 
       <% if !comment.previewing %>
         |
-        <a href="<%= comment.url %>">link</a>
+        <a href="<%= comment.url %>"><%= t(".link") %></a>
 
         <% if comment.is_editable_by_user?(@user) %>
           |

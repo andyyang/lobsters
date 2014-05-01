@@ -1,7 +1,6 @@
 "zh-CN":
   home: "首页"
   newest: "最新"
-  comments: "评论"
   threads: "我的评论"
   story_new: "发布新帖"
   search: "搜索"
@@ -16,6 +15,9 @@
   inviation_queue: "邀请"
   privacy: "隐私声明"
   about: "关于我们"
+  layouts:
+    application:
+      comments: "评论"
   login:
     index:
       login: "登录"
@@ -52,3 +54,7 @@
       comment: "评论" 
       comments: "评论" 
       discuss: "讨论"
+  comments:
+    comment:
+      ago_html: "于%{create_time}前发布"
+      link: "链接"

@@ -60,4 +60,9 @@ en:
       comment: "comment"
       comments: "comments"
       discuss: "discuss"
+  comments:
+    comment:
+      ago_html: "%{create_time} ago"
+      link: "link"
+
 
