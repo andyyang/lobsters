@@ -360,7 +360,8 @@ class Story < ActiveRecord::Base
     while u.match(/__/)
       u.gsub!("__", "_")
     end
-    u.gsub(/^_+/, "").gsub(/_+$/, "")
+    u.gsub!(/^_+/, "").gsub!(/_+$/, "")
+    self.short_id if u.length == 0
   end
 
   def to_param
