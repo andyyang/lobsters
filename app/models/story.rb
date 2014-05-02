@@ -164,7 +164,7 @@ class Story < ActiveRecord::Base
   end
 
   def comments_url
-    "#{short_id_url}/#{self.title_as_url}"
+    "#{short_id_url}"  #/#{self.title_as_url}
   end
 
   def description=(desc)
