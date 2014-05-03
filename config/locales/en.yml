@@ -57,12 +57,22 @@ en:
       by: "by"
       just_now: "just now"
       ago_html: "%{create_time} ago"
+      edit: "edit"
+      undelete: "undelete"
+      delete: "delete"
       comment: "comment"
       comments: "comments"
       discuss: "discuss"
   comments:
+    index:
+      page: "Page %{page_no}"
     comment:
       ago_html: "%{create_time} ago"
       link: "link"
+      edit: "edit"
+      undelete: "undelete"
+      delete: "delete"
+      reply: "reply"
+      story: "on"
 
 

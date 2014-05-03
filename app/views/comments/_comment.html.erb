@@ -51,20 +51,20 @@ class="comment <%= comment.current_vote ? (comment.current_vote[:vote] == 1 ?
 
         <% if comment.is_editable_by_user?(@user) %>
           |
-          <a class="comment_editor">edit</a>
+          <a class="comment_editor"><%= t(".edit") %></a>
         <% end %>
 
         <% if comment.is_gone? && comment.is_undeletable_by_user?(@user) %>
           |
-          <a class="comment_undeletor">undelete</a>
+          <a class="comment_undeletor"><%= t(".undelete") %></a>
         <% elsif !comment.is_gone? && comment.is_deletable_by_user?(@user) %>
           |
-          <a class="comment_deletor">delete</a>
+          <a class="comment_deletor"><%= t(".delete") %></a>
         <% end %>
 
         <% if @user && !comment.story.is_gone? && !comment.is_gone? %>
             |
-            <a class="comment_replier">reply</a>
+            <a class="comment_replier"><%= t(".reply") %></a>
         <% end %>
 
         <span class="reason">
@@ -78,7 +78,7 @@ class="comment <%= comment.current_vote ? (comment.current_vote[:vote] == 1 ?
       <% end %>
 
       <% if defined?(show_story) && show_story %>
-        | on:
+        | <%= t(".story") %>:
         <a href="<%= comment.story.comments_url %>"><%= comment.story.title %></a>
       <% end %>
     </div>
