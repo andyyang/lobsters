@@ -54,6 +54,8 @@ en:
       request_invitation: "Request Invitation"
   stories:
     listdetail:
+      moderator: "moderator"
+      submitter: "original submitter"
       by: "by"
       just_now: "just now"
       ago_html: "%{create_time} ago"

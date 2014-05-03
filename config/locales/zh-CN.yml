@@ -48,6 +48,8 @@
       request_invitation: "请求邀请"
   stories:
     listdetail:
+      moderator: "管理员"
+      submitter: "原作者"
       by: "由"
       just_now: "于刚才发布"
       ago_html: "于%{create_time}前发布"
