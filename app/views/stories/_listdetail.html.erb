@@ -21,8 +21,8 @@ class="story <%= story.vote == 1 ? "upvoted" : (story.vote == -1 ?
         <a href="<%= story.url_or_comments_url %>"><%= story.title %></a>
       <% end %>
       <% if story.is_gone? %>
-        [Story removed by <%= story.is_moderated? ? t(".moderator") :
-          t(".original submitter") %>]
+        [<%= t(".story_removed", user: (story.is_moderated? ? t(".moderator") :
+          t(".original submitter")) )%>]
       <% end %>
     </span>
     <% if story.can_be_seen_by_user?(@user) %>
@@ -53,7 +53,7 @@ class="story <%= story.vote == 1 ? "upvoted" : (story.vote == -1 ?
             |
             <%= link_to t(".undelete"), story_undelete_url(story.short_id),
               :method => :post, :data => {
-              :confirm => "Are you sure you want to undelete this story?" } %>
+              :confirm => t(".undelete_confirm") } %>
           <% elsif !story.is_gone? %>
             |
             <% if story.user_id != @user.try(:id) &&
@@ -63,7 +63,7 @@ class="story <%= story.vote == 1 ? "upvoted" : (story.vote == -1 ?
             <% else %>
               <%= link_to t(".delete"), story_url(story.short_id),
                 :method => :delete, :data => {
-                :confirm => "Are you sure you want to delete this story?" } %>
+                :confirm => t(".delete_confirm") } %>
             <% end %>
           <% end %>
         <% end %>

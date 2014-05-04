@@ -48,6 +48,7 @@
       request_invitation: "请求邀请"
   stories:
     listdetail:
+      story_removed: "帖子已被%{user}删除"
       moderator: "管理员"
       submitter: "原作者"
       by: "由"
@@ -55,7 +56,9 @@
       ago_html: "于%{create_time}前发布"
       edit: "编辑"
       undelete: "恢复"
-      delete: "删除"      
+      undelete_confirm: "确认恢复这个已被删除的帖子吗？"
+      delete: "删除"
+      delete_confirm: "确认删除这个帖子吗？"      
       comment: "评论" 
       comments: "评论" 
       discuss: "讨论"
