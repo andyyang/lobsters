@@ -68,6 +68,11 @@ en:
       comment: "comment"
       comments: "comments"
       discuss: "discuss"
+    new:
+      legend: "Submit a Story"
+      markdown: "Markdown formatting available"
+      submit: "Submit"
+      preview: "Preview"
   comments:
     index:
       page: "Page %{page_no}"

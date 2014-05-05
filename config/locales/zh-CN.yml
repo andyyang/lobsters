@@ -62,6 +62,11 @@
       comment: "评论" 
       comments: "评论" 
       discuss: "讨论"
+    new:
+      legend: "发布新帖"
+      markdown: "支持Markdown格式"
+      submit: "发布"
+      preview: "预览"  
   comments:
     index:
       page: "第%{page_no}页"
