@@ -66,7 +66,15 @@
       legend: "发布新帖"
       markdown: "支持Markdown格式"
       submit: "发布"
-      preview: "预览"  
+      preview: "预览"
+    form:
+      url: "网址:"
+      fetch_title: "获取标题"
+      title: "标题:"
+      tags: "标签:"
+      text: "描述:"
+      text_placeholder: "在提交网址时可以不填写描述信息，请参考指南"
+      guidelines: "发帖指南"    
   comments:
     index:
       page: "第%{page_no}页"

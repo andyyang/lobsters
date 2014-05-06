@@ -73,6 +73,14 @@ en:
       markdown: "Markdown formatting available"
       submit: "Submit"
       preview: "Preview"
+    form:
+      url: "URL:"
+      fetch_title: "Fetch Title"
+      title: "Title:"
+      tags: "Tags:"
+      text: "Text:"
+      text_placeholder: "Optional when submitting a URL; please see guidelines"
+      guidelines: "Story submission guidelines"
   comments:
     index:
       page: "Page %{page_no}"
