@@ -81,6 +81,7 @@ en:
       text: "Text:"
       text_placeholder: "Optional when submitting a URL; please see guidelines"
       guidelines: "Story submission guidelines"
+      submit: "Submit to"
   comments:
     index:
       page: "Page %{page_no}"

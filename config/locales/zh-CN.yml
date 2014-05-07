@@ -74,7 +74,8 @@
       tags: "标签:"
       text: "描述:"
       text_placeholder: "在提交网址时可以不填写描述信息，请参考指南"
-      guidelines: "发帖指南"    
+      guidelines: "发帖指南"
+      submit: "发布到"    
   comments:
     index:
       page: "第%{page_no}页"
