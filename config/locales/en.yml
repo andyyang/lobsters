@@ -82,6 +82,10 @@ en:
       text_placeholder: "Optional when submitting a URL; please see guidelines"
       guidelines: "Story submission guidelines"
       submit: "Submit to"
+      bookmarklet: "To be able to easily submit a page you're viewing in your browser
+        to %{application_name}, drag the bookmarklet to the right
+        to your bookmark bar.  You'll be taken to this page with the viewed
+        page's URL and title."
   comments:
     index:
       page: "Page %{page_no}"

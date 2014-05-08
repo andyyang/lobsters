@@ -75,7 +75,9 @@
       text: "描述:"
       text_placeholder: "在提交网址时可以不填写描述信息，请参考指南"
       guidelines: "发帖指南"
-      submit: "发布到"    
+      submit: "发布到"
+      bookmarklet: "为了将你正在浏览的网页更容易地发布到%{application_name}，请将右边的bookmarklet拖放到书签栏中。
+        你将自动得到这个页面的URL地址和标题. "    
   comments:
     index:
       page: "第%{page_no}页"
