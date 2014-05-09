@@ -9,7 +9,7 @@ class StoriesController < ApplicationController
     :update ]
 
   def create
-    @title = "Submit Story"
+    @title = t(:submit_story)
     @cur_url = "/stories/new"
 
     @story = Story.new(story_params)
@@ -69,7 +69,7 @@ class StoriesController < ApplicationController
   end
 
   def new
-    @title = "Submit Story"
+    @title = t(:submit_story)
     @cur_url = "/stories/new"
 
     @story = Story.new

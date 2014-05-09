@@ -4,7 +4,6 @@
 en:
   home: "Home"
   newest: "Newest"
-  comments: "Comments"
   threads: "Your Threads"
   story_new: "Submit Story"
   search: "Search"
@@ -19,6 +18,10 @@ en:
   inviation_queue: "Invitation Queue"
   privacy: "Privacy"
   about: "About"
+  submit_story: "Submit Story"
+  layouts:
+    application:
+      comments: "Comments"
   login:
     index:
       login: "Login"
