@@ -93,6 +93,10 @@ en:
         be used when additional context or explanation of the URL is
         needed.  Commentary or opinion should be reserved for a comment,
         so that it can be voted on separately from the story."
+      title_guide: "Do not editorialize story titles, but when the original story's
+        title has no context or is unclear, please change it. "
+      change_title: "Please remove extraneous components from titles such as the name of the
+        site or section."
   comments:
     index:
       page: "Page %{page_no}"
