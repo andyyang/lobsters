@@ -89,6 +89,10 @@ en:
         to %{application_name}, drag the bookmarklet to the right
         to your bookmark bar.  You'll be taken to this page with the viewed
         page's URL and title."
+      text_guide: "When submitting a URL, the text field is optional and should only
+        be used when additional context or explanation of the URL is
+        needed.  Commentary or opinion should be reserved for a comment,
+        so that it can be voted on separately from the story."
   comments:
     index:
       page: "Page %{page_no}"
