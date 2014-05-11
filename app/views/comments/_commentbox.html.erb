@@ -21,21 +21,21 @@
 
     <div class="markdown_help_toggler">
       <div class="markdown_help_label">
-        Markdown formatting available
+        <%= t(".markdown") %>
       </div>
       <div class="markdown_help_label markdown_help_label_mobile"
       style="display: none;">
         [M&darr;]
       </div>
 
-      <%= button_tag "#{comment.new_record?? "Post" : "Update"}",
+      <%= button_tag "#{comment.new_record?? t(".post") : t(".update")}",
         :class => "comment-post", :type => "button" %>
       &nbsp;
-      <%= button_tag "Preview", :class => "comment-preview",
+      <%= button_tag t(".preview"), :class => "comment-preview",
         :type => "button" %>
       <% if local_assigns[:cancellable] %>
         &nbsp;
-        <%= button_tag "Cancel", :class => "comment-cancel",
+        <%= button_tag t(".cancel"), :class => "comment-cancel",
           :type => "button" %>
       <% end %>
 

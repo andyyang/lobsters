@@ -83,6 +83,8 @@
         解说或者意见应该被作为评论来发布，这样就能与帖子区分开来以投票。" 
       title_guide: "请勿在标题中插入你的评论，但在原标题无上下文或者含义不清晰时，请修改该标题。"
       change_title: "请从标题中删除无关的部分，如网站或者节点名称。"
+      tags_guide: "如果没有标签适用于你将要发布的帖子，可能这个帖子不适合放在这里。请勿使用不符合帖子主题的标签。"
+      old_story: "如果帖子是一年前的内容，请在标题中用圆括号标明内容的年份。"
   comments:
     index:
       page: "第%{page_no}页"
@@ -94,3 +96,9 @@
       delete: "删除"
       reply: "回复"
       story: "帖子"
+    commentbox:
+      post: "发布"
+      update: "更新"
+      preview: "预览"
+      cancel: "取消"
+      markdown: "支持Markdown格式"      

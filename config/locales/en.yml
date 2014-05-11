@@ -97,6 +97,12 @@ en:
         title has no context or is unclear, please change it. "
       change_title: "Please remove extraneous components from titles such as the name of the
         site or section."
+      tags_guide: "If no tags clearly apply to the story you are submitting, chances
+        are it does not belong here.  Do not overreach with tags if they
+        are not the primary focus of the story."
+      old_story: "When the story being submitted is more than a year or so old,
+        please add the year the story was written to the post title in
+        parentheses."
   comments:
     index:
       page: "Page %{page_no}"
@@ -108,5 +114,10 @@ en:
       delete: "delete"
       reply: "reply"
       story: "on"
-
+    commentbox:
+      post: "Post"
+      update: "Update"
+      preview: "Preview"
+      cancel: "Cancel"
+      markdown: "Markdown formatting available"
 
