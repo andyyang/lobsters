@@ -68,6 +68,11 @@
       markdown: "支持Markdown格式"
       submit: "发布"
       preview: "预览"
+    edit:
+      legend: "编辑帖子"
+      markdown: "支持Markdown格式"
+      save: "保存"
+      cancel: "取消编辑"
     form:
       url: "网址:"
       fetch_title: "获取标题"
