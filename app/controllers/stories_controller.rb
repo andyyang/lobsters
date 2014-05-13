@@ -54,7 +54,7 @@ class StoriesController < ApplicationController
       return redirect_to "/"
     end
 
-    @title = "Edit Story"
+    @title = t(:edit_story)
   end
 
   def fetch_url_title

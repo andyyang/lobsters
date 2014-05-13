@@ -19,6 +19,7 @@ en:
   privacy: "Privacy"
   about: "About"
   submit_story: "Submit Story"
+  edit_story: "Edit Story"
   layouts:
     application:
       comments: "Comments"
@@ -80,6 +81,7 @@ en:
       legend: "Edit Story"
       markdown: "Markdown formatting available"
       save: "Save"
+      or: "or"
       cancel: "cancel editing"
     form:
       url: "URL:"

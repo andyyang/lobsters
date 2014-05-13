@@ -16,6 +16,7 @@
   privacy: "隐私声明"
   about: "关于我们"
   submit_story: "发布新帖"
+  edit_story: "编辑帖子"
   layouts:
     application:
       comments: "评论"
@@ -72,6 +73,7 @@
       legend: "编辑帖子"
       markdown: "支持Markdown格式"
       save: "保存"
+      or: "或"
       cancel: "取消编辑"
     form:
       url: "网址:"
