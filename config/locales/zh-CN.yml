@@ -71,6 +71,7 @@
       preview: "预览"
     edit:
       legend: "编辑帖子"
+      reason: "修改原因:"
       markdown: "支持Markdown格式"
       save: "保存"
       or: "或"
