@@ -93,6 +93,8 @@
       change_title: "请从标题中删除无关的部分，如网站或者节点名称。"
       tags_guide: "如果没有标签适用于你将要发布的帖子，可能这个帖子不适合放在这里。请勿使用不符合帖子主题的标签。"
       old_story: "如果帖子是一年前的内容，请在标题中用圆括号标明内容的年份。"
+    validate:
+      description: "必须有文字，当没有提交网址时"
   comments:
     index:
       page: "第%{page_no}页"
@@ -109,4 +111,11 @@
       update: "更新"
       preview: "预览"
       cancel: "取消"
-      markdown: "支持Markdown格式"      
+      markdown: "支持Markdown格式"
+  activerecord:
+    models:
+      story: "帖子"
+    attributes:
+      story:
+        title: "标题"
+        description: "描述"

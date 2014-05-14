@@ -43,7 +43,7 @@ class Story < ActiveRecord::Base
         errors.add(:url, "is not valid")
       end
     elsif self.description.to_s.strip == ""
-      errors.add(:description, "must contain text if no URL posted")
+      errors.add(:description, t("stories.validate.description"))
     end
 
     check_tags

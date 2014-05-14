@@ -79,6 +79,7 @@ en:
       preview: "Preview"
     edit:
       legend: "Edit Story"
+      reason: "Mod Reason:"
       markdown: "Markdown formatting available"
       save: "Save"
       or: "or"
@@ -110,6 +111,8 @@ en:
       old_story: "When the story being submitted is more than a year or so old,
         please add the year the story was written to the post title in
         parentheses."
+    validate:
+      description: "must contain text if no URL posted"
   comments:
     index:
       page: "Page %{page_no}"
