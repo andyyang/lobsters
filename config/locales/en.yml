@@ -112,7 +112,10 @@ en:
         please add the year the story was written to the post title in
         parentheses."
     validate:
+      posted_story: "has already been submitted within the past %{recent_days} days"
       description: "must contain text if no URL posted"
+      tags: "Must have at least one non-media (PDF, video) tag.  
+        If no tags apply to your content, it probably doesn't belong here."
   comments:
     index:
       page: "Page %{page_no}"

@@ -94,7 +94,9 @@
       tags_guide: "如果没有标签适用于你将要发布的帖子，可能这个帖子不适合放在这里。请勿使用不符合帖子主题的标签。"
       old_story: "如果帖子是一年前的内容，请在标题中用圆括号标明内容的年份。"
     validate:
-      description: "必须有文字，当没有提交网址时"
+      posted_story: "在之前%{recent_days}天内已经被发布过。"
+      description: "必须有文字，在没有提交网址时"
+      tags: "至少有一个非媒体类（PDF，视频）标签，如果没有标签适用于你的帖子，可能这个帖子不适合放在这里。"
   comments:
     index:
       page: "第%{page_no}页"
