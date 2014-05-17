@@ -54,8 +54,8 @@
       moderator: "管理员"
       submitter: "原作者"
       by: "由"
-      just_now: "于刚才发布"
-      ago_html: "于%{create_time}前发布"
+      just_now: "在刚才发布"
+      ago_html: "在%{create_time}前发布"
       edit: "编辑"
       undelete: "恢复"
       undelete_confirm: "确认恢复这个已被删除的帖子吗？"
@@ -97,6 +97,7 @@
       posted_story: "在之前%{recent_days}天内已经被发布过。"
       description: "必须有文字，在没有提交网址时"
       tags: "至少有一个非媒体类（PDF，视频）标签，如果没有标签适用于你的帖子，可能这个帖子不适合放在这里。"
+      url: "格式不正确"
   comments:
     index:
       page: "第%{page_no}页"
@@ -114,6 +115,8 @@
       preview: "预览"
       cancel: "取消"
       markdown: "支持Markdown格式"
+    validate:
+      no_blank: "不能为空。"
   activerecord:
     models:
       story: "帖子"
@@ -121,3 +124,6 @@
       story:
         title: "标题"
         description: "描述"
+        url: "网址"
+      comment:
+        comment: "评论"

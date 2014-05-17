@@ -27,13 +27,13 @@ class Comment < ActiveRecord::Base
 
   validate do
     self.comment.to_s.strip == "" &&
-      errors.add(:comment, "cannot be blank.")
+      errors.add(:comment, I18n.t("comments.validate.no_blank"))
 
     self.user_id.blank? &&
-      errors.add(:user_id, "cannot be blank.")
+      errors.add(:user_id, I18n.t("comments.validate.no_blank"))
 
     self.story_id.blank? &&
-      errors.add(:story_id, "cannot be blank.")
+      errors.add(:story_id, I18n.t("comments.validate.no_blank"))
 
     (m = self.comment.to_s.strip.match(/\A(t)his([\.!])?$\z/i)) &&
       errors.add(:base, (m[1] == "T" ? "N" : "n") + "ope" + m[2].to_s)

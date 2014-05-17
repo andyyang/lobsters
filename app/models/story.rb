@@ -39,7 +39,7 @@ class Story < ActiveRecord::Base
           end
         end
       else
-        errors.add(:url, "is not valid")
+        errors.add(:url, I18n.t("stories.validate.url"))
       end
     elsif self.description.to_s.strip == ""
       errors.add(:description, I18n.t("stories.validate.description"))
