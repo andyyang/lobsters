@@ -116,7 +116,7 @@ en:
       view_discussion_err_html: "Please view the %{previous_discussion} for this story."
       posted_story_notice: "Note: This story was already submitted %{created_at} ago, but may
         be submitted again."
-      view_discussion_notice: "Please view the %{previous_discussion} for this story first.  If the content
+      view_discussion_notice_html: "Please view the %{previous_discussion} for this story first.  If the content
         has changed or warrants new discussion, you may submit it again."
     validate:
       posted_story: " has already been submitted within the past %{recent_days} days"
