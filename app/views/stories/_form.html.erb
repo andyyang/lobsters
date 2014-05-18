@@ -1,10 +1,11 @@
 <% if f.object.errors.count == 1 && f.object.already_posted_story %>
   <div class="flash-error">
-  <h2>Error: This story was already submitted <%=
-    time_ago_in_words(f.object.already_posted_story.created_at) %> ago</h2>
+  <h2>
+    t(".posted_story_err", created_at: time_ago_in_words(f.object.already_posted_story.created_at))
+  </h2>
   <p>
-  Please view the <a href="<%= f.object.already_posted_story.comments_url %>"
-  target="_blank">previous discussion</a> for this story.
+    t(".view_discussion_err_html", previous_discussion: link_to(t(".previous_discussion"), 
+      f.object.already_posted_story.comments_url, target: "_blank"))
   </p>
   </div>
 <% elsif f.object.errors.any? %>
