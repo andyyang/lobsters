@@ -118,6 +118,9 @@ en:
         be submitted again."
       view_discussion_notice_html: "Please view the %{previous_discussion} for this story first.  If the content
         has changed or warrants new discussion, you may submit it again."
+      user: "user"
+      users: "users"
+      filtering: "%{count} %{user} filtering"
     validate:
       posted_story: " has already been submitted within the past %{recent_days} days"
       description: " must contain text if no URL posted"

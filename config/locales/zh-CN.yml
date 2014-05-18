@@ -99,6 +99,9 @@
       posted_story_notice: "注意: 这个帖子的内容已经在%{created_at}前被发布过，但是你可以再次发布它。"
       view_discussion_notice_html: "请先查看之前对这个帖子的%{previous_discussion}。
         如果帖子内容已经发生了变化或者需要发起新的讨论，你可以再次发布它。"
+      user: "用户"
+      users: "用户"
+      filtering: "被%{user}筛除%{count}个"
     validate:
       posted_story: "在之前%{recent_days}天内已经被发布过。"
       description: "必须有文字，在没有提交网址时"

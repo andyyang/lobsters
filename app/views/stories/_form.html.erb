@@ -52,8 +52,7 @@
     [ "#{t.tag} - #{t.description}", t.tag, { "data-html" => raw("<strong>") +
       t.tag + raw("</strong> - ") + t.description.to_s +
       (t.filtered_count == 0 ? "" :
-      raw(" <em>") + "#{t.filtered_count} user" +
-      (t.filtered_count == 1 ? "" : "s") + " filtering" +
+      raw(" <em>") + t(".filtering", count: t.filtered_count, user: (t.filtered_count == 1 ? t(".user") : t(".users"))) +
       raw("</em>")) } ]}, f.object.tags_a), {}, { :multiple => true } %>
   </div>
 
