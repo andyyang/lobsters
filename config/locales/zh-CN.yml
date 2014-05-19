@@ -17,6 +17,9 @@
   about: "关于我们"
   submit_story: "发布新帖"
   edit_story: "编辑帖子"
+  newest_stories: "最近的帖子"
+  newest_comments: "最近的评论"
+  your_threads: "我的评论"
   layouts:
     application:
       comments: "评论"

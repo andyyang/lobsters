@@ -165,7 +165,7 @@ class CommentsController < ApplicationController
       "title=\"RSS 2.0\" href=\"/comments.rss" <<
       (@user ? "?token=#{@user.rss_token}" : "") << "\" />"
 
-    @heading = @title = "Newest Comments"
+    @heading = @title = t(:newest_comments)
     @cur_url = "/comments"
 
     @page = 1
@@ -207,7 +207,7 @@ class CommentsController < ApplicationController
       return redirect_to "/login"
     else
       @showing_user = @user
-      @heading = @title = "Your Threads"
+      @heading = @title = t(:your_threads)
       @cur_url = "/threads"
     end
 

@@ -36,7 +36,7 @@ class HomeController < ApplicationController
   def newest
     @stories = find_stories({ :newest => true })
 
-    @heading = @title = "Newest Stories"
+    @heading = @title = t(:newest_stories)
     @cur_url = "/newest"
     @newest = true
 

@@ -20,6 +20,9 @@ en:
   about: "About"
   submit_story: "Submit Story"
   edit_story: "Edit Story"
+  newest_stories: "Newest Stories"
+  newest_comments: "Newest Comments"
+  your_threads: "Your Threads"
   layouts:
     application:
       comments: "Comments"
