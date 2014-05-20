@@ -114,7 +114,7 @@
     index:
       page: "第%{page_no}页"
     comment:
-      ago_html: "于%{create_time}前发布"
+      ago_html: "在%{create_time}前发布"
       link: "链接"
       edit: "编辑"
       undelete: "恢复"
@@ -129,6 +129,8 @@
       markdown: "支持Markdown格式"
     validate:
       no_blank: "不能为空。"
+    confirm:
+      delete: "确认删除这个评论吗？"
   activerecord:
     models:
       story: "帖子"
