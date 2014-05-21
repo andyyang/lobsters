@@ -131,6 +131,7 @@
       no_blank: "不能为空。"
     confirm:
       delete: "确认删除这个评论吗？"
+      undelete: "确认恢复这个评论吗？"
   activerecord:
     models:
       story: "帖子"

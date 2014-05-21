@@ -279,7 +279,7 @@ $(document).ready(function() {
   });
 
   $(document).on("click", "a.comment_deletor", function() {
-    if (confirm(t("comments.confirm.delete"))) {
+    if (confirm("<%= I18n.t("comments.confirm.delete") %>")) {
       var li = $(this).closest(".comment");
       $.post("/comments/" + $(li).attr("data-shortid") + "/delete",
       function(d) {
@@ -289,7 +289,7 @@ $(document).ready(function() {
   });
 
   $(document).on("click", "a.comment_undeletor", function() {
-    if (confirm("Are you sure you want to undelete this comment?")) {
+    if (confirm("<%= I18n.t("comments.confirm.undelete") %>")) {
       var li = $(this).closest(".comment");
       $.post("/comments/" + $(li).attr("data-shortid") + "/undelete",
       function(d) {
