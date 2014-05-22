@@ -132,6 +132,10 @@
     confirm:
       delete: "确认删除这个评论吗？"
       undelete: "确认恢复这个评论吗？"
+    gone_text:
+      removed_by_author: "该评论已被作者删除"
+      removed_by_moderator: "该评论已被管理员%{moderator}删除"
+      reason: "未给原因"
   activerecord:
     models:
       story: "帖子"

@@ -263,7 +263,7 @@ class Comment < ActiveRecord::Base
         self.moderation.try(:moderator).try(:username).to_s << ": " <<
         (self.moderation.try(:reason) || "No reason given")
     else
-      "Comment removed by author"
+      I18n.t("comments.gone_text.removed_by_author")
     end
   end
 
