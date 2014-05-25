@@ -156,3 +156,6 @@ en:
       removed_by_author: "Comment removed by author"
       removed_by_moderator: "Thread removed by moderator %{moderator}"
       reason: "No reason given"
+  filters:
+    index:
+      legend: "Filtered Tags"
