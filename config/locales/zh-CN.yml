@@ -139,6 +139,7 @@
   filters:
     index:
       legend: "标签过滤"
+      hide_stories: "为了在首页隐藏有特定标签的帖子，请选择下面列出的标签"
   activerecord:
     models:
       story: "帖子"
