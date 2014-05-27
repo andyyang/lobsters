@@ -7,7 +7,6 @@ en:
   threads: "Your Threads"
   story_new: "Submit Story"
   search: "Search"
-  filters: "Filters"
   new_messages: "New Messages"
   new_message: "New Message"
   messages: "Messages"
@@ -26,6 +25,7 @@ en:
   layouts:
     application:
       comments: "Comments"
+      filters: "Filters"
   login:
     index:
       login: "Login"
@@ -159,3 +159,9 @@ en:
   filters:
     index:
       legend: "Filtered Tags"
+      hide_stories: "To hide stories from the home page that have been tagged with certain tags,
+        check them below."
+      stored_in_cookie_html: "Since you are not logged in, your filters will be stored in a long-lasting
+        browser cookie.  To permanently store your tag filters and have them work
+        across browsers, %{login} to your account."
+      login: "login"

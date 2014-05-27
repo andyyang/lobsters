@@ -4,7 +4,6 @@
   threads: "我的评论"
   story_new: "发布新帖"
   search: "搜索"
-  filters: "筛选"
   new_messages: "新消息"
   new_message: "新消息"
   messages: "消息"
@@ -23,6 +22,7 @@
   layouts:
     application:
       comments: "评论"
+      filters: "筛选"
   login:
     index:
       login: "登录"
@@ -139,7 +139,10 @@
   filters:
     index:
       legend: "标签过滤"
-      hide_stories: "为了在首页隐藏有特定标签的帖子，请选择下面列出的标签"
+      hide_stories: "为了在首页隐藏具有指定标签的帖子，请选择下面所列出的标签"
+      stored_in_cookie_html: "由于未登录，标签将保存在浏览器的Cookie中。为了永久地保存你的标签并且能够在其他浏览器中使用，
+        请用你的账号%{login}。"
+      login: "登录"
   activerecord:
     models:
       story: "帖子"

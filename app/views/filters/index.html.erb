@@ -9,9 +9,7 @@
 
   <% if !@user %>
     <p>
-    Since you are not logged in, your filters will be stored in a long-lasting
-    browser cookie.  To permanently store your tag filters and have them work
-    across browsers, <a href="/login">login</a> to your account.
+    <%= t(".stored_in_cookie_html", login: link_to(t(".login"), login_path )) %>
     </p>
   <% end %>
 
