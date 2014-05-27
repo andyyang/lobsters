@@ -16,10 +16,10 @@
   <%= form_tag "/filters", :method => :post do %>
     <table class="data zebra" cellspacing=0 width="75%">
     <tr>
-      <th width="7%">Hide</th>
-      <th width="13%">Tag</th>
-      <th width="65%">Description</th>
-      <th width="5%" style="text-align: right; padding-right: 1em;">Stories</th>
+      <th width="7%"><%= t(".hide") %></th>
+      <th width="13%"><%= t(".tag") %></th>
+      <th width="65%"><%= t(".description") %></th>
+      <th width="5%" style="text-align: right; padding-right: 1em;"><%= t(".stories") %></th>
     </tr>
     <% @tags.each do |tag| %>
       <tr>
@@ -33,7 +33,7 @@
     <% end %>
     </table>
     <p>
-    <%= submit_tag "Save Filters" %>
+    <%= submit_tag t(".save") %>
     </p>
   <% end %>
 </div>

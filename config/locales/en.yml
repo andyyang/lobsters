@@ -165,3 +165,8 @@ en:
         browser cookie.  To permanently store your tag filters and have them work
         across browsers, %{login} to your account."
       login: "login"
+      hide: "Hide"
+      tag: "Tag"
+      description: "Description"
+      stories: "Stories"
+      save: "Save Filters"

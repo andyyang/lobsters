@@ -143,6 +143,11 @@
       stored_in_cookie_html: "由于未登录，标签将保存在浏览器的Cookie中。为了永久地保存你的标签并且能够在其他浏览器中使用，
         请用你的账号%{login}。"
       login: "登录"
+      hide: "隐藏"
+      tag: "标签"
+      description: "描述"
+      stories: "帖子"
+      save: "保存"
   activerecord:
     models:
       story: "帖子"
