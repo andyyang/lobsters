@@ -138,6 +138,7 @@
       reason: "未给原因"
   filters:
     index:
+      title: "标签过滤"
       legend: "标签过滤"
       hide_stories: "为了在首页隐藏具有指定标签的帖子，请选择下面所列出的标签"
       stored_in_cookie_html: "由于未登录，标签将保存在浏览器的Cookie中。为了永久地保存你的标签并且能够在其他浏览器中使用，
@@ -148,6 +149,8 @@
       description: "描述"
       stories: "帖子"
       save: "保存"
+    update:
+       success: "过滤选择项已经更新。"
   activerecord:
     models:
       story: "帖子"

@@ -158,6 +158,7 @@ en:
       reason: "No reason given"
   filters:
     index:
+      title: "Filtered Tags"
       legend: "Filtered Tags"
       hide_stories: "To hide stories from the home page that have been tagged with certain tags,
         check them below."
@@ -170,3 +171,5 @@ en:
       description: "Description"
       stories: "Stories"
       save: "Save Filters"
+    update:
+       success: "Your filters have been updated."
