@@ -151,6 +151,10 @@
       save: "保存"
     update:
        success: "过滤选择项已经更新。"
+  settings:
+    index:
+      profile: "我的简介"
+      legend: "帐户设置"
   activerecord:
     models:
       story: "帖子"

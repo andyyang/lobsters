@@ -1,9 +1,9 @@
 <div class="box wide">
   <div class="legend right">
-    <a href="/u/<%= @user.username %>">View Profile</a>
+    <a href="/u/<%= @user.username %>"><%= t(".profile") %></a>
   </div>
   <div class="legend">
-    Account Settings
+    <%= t(".legend") %>
   </div>
 
   <%= form_for @edit_user, :url => settings_url, :method => :post,

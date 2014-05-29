@@ -172,4 +172,8 @@ en:
       stories: "Stories"
       save: "Save Filters"
     update:
-       success: "Your filters have been updated."
+      success: "Your filters have been updated."
+  settings:
+    index:
+      profile: "View Profile"
+      account: "Account Settings"
