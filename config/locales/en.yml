@@ -176,4 +176,9 @@ en:
   settings:
     index:
       profile: "View Profile"
-      account: "Account Settings"
+      legend: "Account Settings"
+      username: "Username:"
+      new_password: "New Password:"
+      confirm_password: "Confirm Password:"
+      email: "E-mail Address:"
+      user_key: "User Key:"
