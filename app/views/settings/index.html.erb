@@ -11,7 +11,7 @@
     <%= error_messages_for f.object %>
 
     <div class="boxline">
-      <%= f.label :username, "Username:", :class => "required" %>
+      <%= f.label :username, t(".username"), :class => "required" %>
       <%= f.text_field :username, :size => 15 %>
       <span class="hint">
         <tt>[A-Za-z0-9][A-Za-z0-9_-]*</tt>
@@ -19,22 +19,22 @@
     </div>
 
     <div class="boxline">
-      <%= f.label :password, "New Password:", :class => "required" %>
+      <%= f.label :password, t(".new_password"), :class => "required" %>
       <%= f.password_field :password, :size => 40, :autocomplete => "off" %>
     </div>
 
     <div class="boxline">
-      <%= f.label :password_confirmation, "Confirm Password:",
+      <%= f.label :password_confirmation, t(".confirm_password"),
         :class => "required" %>
       <%= f.password_field :password_confirmation, :size => 40,
         :autocomplete => "off" %>
     </div>
 
     <div class="boxline">
-      <%= f.label :email, "E-mail Address:", :class => "required" %>
+      <%= f.label :email, t(".email"), :class => "required" %>
       <%= f.text_field :email, :size => 40 %>
       <span class="hint">
-        <a href="http://www.gravatar.com/" target="_blank">Gravatar</a>'ized
+        <%= t(".gravatarized_html", gravatar: link_to("Gravatar", "http://www.gravatar.com/", target: "_blank")) %>
       </span>
     </div>
 
@@ -46,20 +46,20 @@
     </div>
 
     <div class="boxline">
-      <%= f.label :pushover_device, "Pushover Device:",
+      <%= f.label :pushover_device, t(".pushover_device"),
         :class => "required" %>
       <%= f.text_field :pushover_device, :placeholder => "optional",
         :size => 15 %>
     </div>
 
     <div class="boxline">
-      <%= f.label :pushover_sound, "Pushover Sound:",
+      <%= f.label :pushover_sound, t(".pushover_sound"),
         :class => "required" %>
       <%= f.select :pushover_sound, Pushover.sounds.map{|k,v| [ v, k ] } %>
     </div>
 
     <div class="boxline">
-      <%= f.label :about, "About:", :class => "required" %>
+      <%= f.label :about, t(".about"), :class => "required" %>
       <%= f.text_area :about, :size => "100x5", :style => "width: 600px;" %>
     </div>
 
@@ -67,7 +67,7 @@
       <div class="boxline markdown_help_toggler" style="margin-left: 9em;
       width: 600px;">
         <div class="markdown_help_label">
-          Markdown formatting available
+          <%= t(".markdown") %>
         </div>
 
         <div style="clear: both;"></div>

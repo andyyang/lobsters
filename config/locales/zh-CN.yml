@@ -153,8 +153,17 @@
        success: "过滤选择项已经更新。"
   settings:
     index:
-      profile: "我的简介"
+      profile: "我的主页"
       legend: "帐户设置"
+      username: "用户名:"
+      new_password: "新密码:"
+      confirm_password: "确认新密码:"
+      email: "E-mail:"
+      gravatarized_html: "支持 %{gravatar}"
+      pushover_device: "Pushover 设备名称:"
+      pushover_sound: "Pushover 提示音:"
+      about: "个人介绍:"
+      markdown: "支持Markdown格式"
   activerecord:
     models:
       story: "帖子"
