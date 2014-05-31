@@ -164,6 +164,9 @@
       pushover_sound: "Pushover 提示音:"
       about: "个人介绍:"
       markdown: "支持Markdown格式"
+      comment_reply_notification: "回复评论的通知设置"
+      receive_email: "接收E-mail:"
+      receive_pushover: "接收Pushover提示:"
   activerecord:
     models:
       story: "帖子"

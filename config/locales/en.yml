@@ -186,3 +186,6 @@ en:
       pushover_sound: "Pushover Sound:"
       about: "About:"
       markdown: "Markdown formatting available"
+      comment_reply_notification: "Comment Reply Notification Settings"
+      receive_email: "Receive E-mail:"
+      receive_pushover: "Receive Pushover Alert:"

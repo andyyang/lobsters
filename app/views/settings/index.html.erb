@@ -77,16 +77,16 @@
     </div>
 
     <div class="legend">
-      Comment Reply Notification Settings
+      <%= t(".comment_reply_notification") %>
     </div>
 
     <div class="boxline">
-      <%= f.label :email_replies, "Receive E-mail:", :class => "required" %>
+      <%= f.label :email_replies, t(".receive_email"), :class => "required" %>
       <%= f.check_box :email_replies %>
     </div>
 
     <div class="boxline">
-      <%= f.label :pushover_replies, "Receive Pushover Alert:",
+      <%= f.label :pushover_replies, t(".receive_pushover"),
         :class => "required" %>
       <%= f.check_box :pushover_replies %>
       <span class="hint">
