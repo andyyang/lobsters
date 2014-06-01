@@ -90,47 +90,47 @@
         :class => "required" %>
       <%= f.check_box :pushover_replies %>
       <span class="hint">
-        Requires user key entered above
+        <%= t(".require_user_key") %>
       </span>
     </div>
 
     <br>
 
     <div class="legend">
-      Comment Mention Notification Settings
+      <%= t(".comment_mention_notification") %>
     </div>
 
     <div class="boxline">
-      <%= f.label :email_mentions, "Receive E-mail:", :class => "required" %>
+      <%= f.label :email_mentions, t(".receive_email"), :class => "required" %>
       <%= f.check_box :email_mentions %>
     </div>
 
     <div class="boxline">
-      <%= f.label :pushover_mentions, "Receive Pushover Alert:",
+      <%= f.label :pushover_mentions, t(".receive_pushover"),
         :class => "required" %>
       <%= f.check_box :pushover_mentions %>
       <span class="hint">
-        Requires user key entered above
+        <%= t(".require_user_key") %>
       </span>
     </div>
 
     <br>
 
     <div class="legend">
-      Private Message Notification Settings
+      <%= t(".private_message_notification") %>
     </div>
 
     <div class="boxline">
-      <%= f.label :email_messages, "Receive E-mail:", :class => "required" %>
+      <%= f.label :email_messages, t(".receive_email"), :class => "required" %>
       <%= f.check_box :email_messages %>
     </div>
 
     <div class="boxline">
-      <%= f.label :pushover_messages, "Receive Pushover Alert:",
+      <%= f.label :pushover_messages, t(".receive_pushover"),
         :class => "required" %>
       <%= f.check_box :pushover_messages %>
       <span class="hint">
-        Requires user key entered above
+        <%= t(".require_user_key") %>
       </span>
     </div>
 
