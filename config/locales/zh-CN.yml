@@ -170,6 +170,7 @@
       require_user_key: "需要设置之前的Pushover User Key"
       comment_mention_notification: "评论提示的通知设置"
       private_message_notification: "私信的通知设置"
+      mail_list: "邮件列表设置"
   activerecord:
     models:
       story: "帖子"
