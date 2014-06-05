@@ -213,3 +213,6 @@ en:
         messages will be deleted.  Your submitted stories will not be deleted.
         Your username will remain reserved and will not be available to use on any
         other account."
+      verify_password: "Verify Password:"
+      delete_submit: "Yes, Delete My Account"
+      invite_new_user: "Invite a New User"
