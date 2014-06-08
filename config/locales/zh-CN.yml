@@ -171,13 +171,10 @@
       comment_mention_notification: "评论提示的通知设置"
       private_message_notification: "私信的通知设置"
       mail_list: "邮件列表设置"
-      mail_list_html: "When enabled, you will receive all newly submitted stories and comments to
-        your e-mail address entered above, except those stories (and their
-        comments) filtered by your %{tag_filters}.  All e-mail
-        messages will appear to be sent to your private list address shown below
-        which you can filter on, and e-mails you send to that address will be
-        posted under your account on this website.  You should keep your unique
-        list address private to prevent others from posting comments as you."
+      mail_list_html: "在启用后，除了那些被你的%{tag_filters}过滤的帖子（和相应的评论）之外，所有新提交的帖子和评论
+        将会被发送到你在上面所设置的E-mail地址中。所有的E-mail信息将会发送自下面所显示的你的个人邮件列表地址，你可以设
+        置接收邮件列表的选项，你发送到这个邮件列表地址的E-mail将会以你的用户名发布在这个网站上。确保不要公开你的个人邮件
+        列表地址，以防止其他人以你的名义发布评论。"
       receive_list: "接收邮件列表E-mail:"
       no_emails: "不接收E-mail"
       stories_comments: "所有帖子和评论"
@@ -185,12 +182,9 @@
       list_address: "邮件列表地址:"
       save_settings: "保存所有设置"
       delete_account: "删除帐户"
-      delete_account_hint: "To permanently delete your account, verify your current password below.
-        Your account will be put into a deleted state, your comments will be marked
-        as deleted and no longer readable by any other users, and your private
-        messages will be deleted.  Your submitted stories will not be deleted.
-        Your username will remain reserved and will not be available to use on any
-        other account."
+      delete_account_hint: "为了删除你的帐户，需要验证你当前的密码。你的帐户将被置为已删除状态，你的评论也将被置为
+        已删除并且不能再被其他用户看到，你的私信也将被删除。你提交的帖子不会被删除。你的用户名将被保留，不会被其他用户
+        所使用。"
       verify_password: "验证密码:"
       delete_submit: "是的，删除我的帐户"
       invite_new_user: "邀请新用户"
