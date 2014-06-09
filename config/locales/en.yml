@@ -216,3 +216,10 @@ en:
       verify_password: "Verify Password:"
       delete_submit: "Yes, Delete My Account"
       invite_new_user: "Invite a New User"
+  users:
+    invitationform:
+      notice_html: "Invitations are unlimited, but persons you invite will be associated with your
+        account in the %{user_tree} and you may be responsible for them
+        if they cause problems.  Please use your discretion when inviting persons you
+        don't personally know."
+
