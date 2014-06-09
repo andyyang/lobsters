@@ -202,7 +202,7 @@ en:
         list address private to prevent others from posting comments as you."
       receive_list: "Receive List E-mails:"
       no_emails: "No e-mails"
-      stories_comments: "All stories and comments"
+      stories_and_comments: "All stories and comments"
       only_stories: "Only stories"
       list_address: "List Address:"
       save_settings: "Save All Settings"
