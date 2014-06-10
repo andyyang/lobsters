@@ -189,6 +189,15 @@
       verify_password: "验证密码:"
       delete_submit: "是的，删除我的帐户"
       invite_new_user: "邀请新用户"
+  users:
+    invitationform:
+      notice_html: "Invitations are unlimited, but persons you invite will be associated with your
+        account in the %{user_tree} and you may be responsible for them
+        if they cause problems.  Please use your discretion when inviting persons you
+        don't personally know."
+      email: "E-mail地址:"
+      memo: "发送给用户的消息:"
+      send_invitaion: "发送邀请"
   activerecord:
     models:
       story: "帖子"
