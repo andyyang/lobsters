@@ -191,10 +191,8 @@
       invite_new_user: "邀请新用户"
   users:
     invitationform:
-      notice_html: "Invitations are unlimited, but persons you invite will be associated with your
-        account in the %{user_tree} and you may be responsible for them
-        if they cause problems.  Please use your discretion when inviting persons you
-        don't personally know."
+      notice_html: "邀请的数量无限制，但是你所邀请的用户将在%{user_tree} 中与你的帐户关联，如果这些用户造成某些问题，
+        你可能会为他们负责。当邀请你不认识的人时，请慎重决定。"
       email: "E-mail地址:"
       memo: "发送给用户的消息:"
       send_invitaion: "发送邀请"
