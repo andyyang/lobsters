@@ -12,18 +12,18 @@ don't personally know.
   <% end %>
 
   <div class="boxline">
-    <%= label_tag :email, "E-mail Address:", :class => "required" %>
+    <%= label_tag :email, t(".email"), :class => "required" %>
     <%= text_field_tag :email, "", :size => 30, :autocomplete => "off" %>
   </div>
 
   <div class="boxline">
-    <%= label_tag :memo, "Memo to User:", :class => "required" %>
+    <%= label_tag :memo, t(".memo"), :class => "required" %>
     <%= text_field_tag :memo, "", :size => 60 %>
   </div>
 
   <div class="boxline">
     <p></p>
-    <%= submit_tag "Send Invitation" %>
+    <%= submit_tag t(".send_invitaion") %>
   </div>
 <% end %>
 
