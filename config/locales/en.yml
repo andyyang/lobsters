@@ -222,6 +222,7 @@ en:
         account in the %{user_tree} and you may be responsible for them
         if they cause problems.  Please use your discretion when inviting persons you
         don't personally know."
+      user_tree: "user tree"
       email: "E-mail Address:"
       memo: "Memo to User:"
       send_invitaion: "Send Invitation"
