@@ -236,7 +236,7 @@ en:
       moderator: "moderator" 
       user: "user"
       joined: "Joined:"
-      ago: "ago"
+      time_ago_html: "%{time} ago"
       invitation_from: "by invitation from %{user}"
       banned: "Banned:"
       banned_from: "by %{user}"
