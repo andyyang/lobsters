@@ -6,7 +6,6 @@
   search: "搜索"
   new_messages: "新消息"
   new_message: "新消息"
-  messages: "消息"
   logout: "退出"
   logout_confirm: "确定退出？"
   login_link: "登录"
@@ -23,6 +22,7 @@
     application:
       comments: "评论"
       filters: "筛选"
+      messages: "消息"
   login:
     index:
       login: "登录"
@@ -198,7 +198,7 @@
       memo: "发送给用户的消息:"
       send_invitaion: "发送邀请"
     show:
-      send_message: "发送私信"
+      send_message: "发送消息"
       status: "状态:"
       banned_status: "冻结"
       inactive_status: "暂停"
@@ -218,6 +218,26 @@
       comments_count: "发布评论:"
       about: "个人介绍:"
       mystery: "一个谜..."
+  messages:
+    index:
+      view_received: "收件箱"
+      view_sent: "发件箱"
+      messages: "消息"
+      messages_sent: "已发送的消息"
+      from: "发件人"
+      to: "收件人"
+      received: "接收时间"
+      sent: "发送时间"
+      subject: "主题"
+      time_ago_html: "%{time}之前"
+      delete: "删除已选择的消息"
+      no_messages: "你没有任何消息。"
+      no_sent_messages: "你没有任何已发送的消息。"
+      compose: "新建消息"
+      new_to: "收件人:"
+      new_subject: "主题:"
+      new_message: "消息内容:"
+      send: "发送消息"
   activerecord:
     models:
       story: "帖子"

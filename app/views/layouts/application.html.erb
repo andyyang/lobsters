@@ -75,7 +75,7 @@
               t(:new_messages) %></a>
           <% else %>
             <a href="/messages" <%= @cur_url == "/messages" ?
-              raw("class=\"cur_url\"") : "" %>><%= t(:messages) %></a>
+              raw("class=\"cur_url\"") : "" %>><%= t(".messages") %></a>
           <% end %>
 
           <a href="/settings" <%= @cur_url == "/settings" ?
