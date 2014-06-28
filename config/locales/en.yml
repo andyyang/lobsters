@@ -267,3 +267,13 @@ en:
       new_subject: "Subject:"
       new_message: "Message:"
       send: "Send Message"
+    show:
+      back_to_sent_messages: "Back to Sent Messages"
+      back_to_messages: "Back to Messages"
+      sent_from: "Sent from %{user_a}(%{user_type}) to %{user_b}"
+      administrator: "administrator"
+      moderator: "moderator"
+      delete: "Delete Message"
+      keep: "Keep As New"
+      compose: "Compose Reply To %{user}"
+      send: "Send Message"
