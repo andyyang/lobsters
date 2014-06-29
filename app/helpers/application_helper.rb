@@ -16,4 +16,12 @@ module ApplicationHelper
     label_tag(nil, time_ago_in_words(*args),
       :title => args.first.strftime("%F %T %z"))
   end
+
+  def user_type(user)
+    if user.is_admin?
+        t("messages.show.administrator")
+    elsif user.is_moderator?
+        t("messages.show.moderator")
+    end
+  end
 end

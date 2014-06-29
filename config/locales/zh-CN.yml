@@ -238,6 +238,16 @@
       new_subject: "主题:"
       new_message: "内容:"
       send: "发送消息"
+    show:
+      back_to_sent_messages: "返回到消息发件箱"
+      back_to_messages: "返回到消息收件箱"
+      sent_from_html: "%{time}前从%{user_a}%{user_type}发送到%{user_b}"
+      administrator: "(管理员)"
+      moderator: "(版主)"
+      delete: "删除消息"
+      keep: "保持为新消息"
+      compose: "新建对%{user}的回复"
+      send: "发送消息"
   activerecord:
     models:
       story: "帖子"
