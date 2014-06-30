@@ -248,6 +248,8 @@
       keep: "保持为新消息"
       compose: "新建对%{user}的回复"
       send: "发送消息"
+    create:
+      has_sent: "你的消息已经被发送给%{user}."
   activerecord:
     models:
       story: "帖子"

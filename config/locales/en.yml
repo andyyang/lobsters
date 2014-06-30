@@ -277,3 +277,5 @@ en:
       keep: "Keep As New"
       compose: "Compose Reply To %{user}"
       send: "Send Message"
+    create:
+      has_sent: "Your message has been sent to %{user}."
