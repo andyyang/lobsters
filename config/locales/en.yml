@@ -267,6 +267,7 @@ en:
       new_subject: "Subject:"
       new_message: "Message:"
       send: "Send Message"
+      title: "Messages"
     show:
       back_to_sent_messages: "Back to Sent Messages"
       back_to_messages: "Back to Messages"
@@ -278,4 +279,11 @@ en:
       compose: "Compose Reply To %{user}"
       send: "Send Message"
     create:
-      has_sent: "Your message has been sent to %{user}."
+      title: "Messages"
+      success: "Your message has been sent to %{user}."
+    sent:
+      title: "Messages Sent"
+    destroy:
+      success: "Deleted message."
+    batch_delete:
+      success: "Deleted %{count} %{message}"
