@@ -249,7 +249,17 @@
       compose: "新建对%{user}的回复"
       send: "发送消息"
     create:
+      title: "消息"
       has_sent: "你的消息已经被发送给%{user}."
+    sent:
+      title: "已发送的消息"
+    destroy:
+      success: "消息已被删除。"
+    batch_delete:
+      success: "%{count}个%{message}已被删除"
+      message: "消息"
+    find_message:
+      error: "无法查找消息"
   activerecord:
     models:
       story: "帖子"

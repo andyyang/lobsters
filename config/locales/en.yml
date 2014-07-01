@@ -287,3 +287,6 @@ en:
       success: "Deleted message."
     batch_delete:
       success: "Deleted %{count} %{message}"
+      message: "message"
+    find_message:
+      error: "Could not find message."
