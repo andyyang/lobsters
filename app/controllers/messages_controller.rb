@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
 
   def index
     @cur_url = "/messages"
-    @title = "Messages"
+    @title = t("messages.index.title")
 
     @new_message = Message.new
 
@@ -18,7 +18,7 @@ class MessagesController < ApplicationController
 
   def sent
     @cur_url = "/messages"
-    @title = "Messages Sent"
+    @title = t("messages.sent.title")
 
     @direction = :out
     @messages = @user.undeleted_sent_messages
@@ -30,7 +30,7 @@ class MessagesController < ApplicationController
 
   def create
     @cur_url = "/messages"
-    @title = "Messages"
+    @title = t("messages.create.title")
 
     @new_message = Message.new(message_params)
     @new_message.author_user_id = @user.id
@@ -39,8 +39,7 @@ class MessagesController < ApplicationController
     @messages = @user.undeleted_received_messages
 
     if @new_message.save
-      flash[:success] = "Your message has been sent to " <<
-        @new_message.recipient.username.to_s << "."
+      flash[:success] = t("messages.create.success", user: @new_message.recipient.username.to_s)
       return redirect_to "/messages"
     else
       render :action => "index"
@@ -78,7 +77,7 @@ class MessagesController < ApplicationController
 
     @message.save!
 
-    flash[:success] = "Deleted message."
+    flash[:success] = t("messages.destroy.success")
 
     if @message.author_user_id == @user.id
       return redirect_to "/messages/sent"
@@ -107,7 +106,7 @@ class MessagesController < ApplicationController
       end
     end
 
-    flash[:success] = "Deleted #{deleted} message#{deleted == 1 ? "" : "s"}."
+    flash[:success] = t("messages.batch_delete.success", count: deleted, message: t("messages.batch_delete.message")) 
 
     return redirect_to "/messages"
   end
@@ -135,7 +134,7 @@ private
       end
     end
 
-    flash[:error] = "Could not find message."
+    flash[:error] = t("messages.find_message.error")
     redirect_to "/messages"
     return false
   end

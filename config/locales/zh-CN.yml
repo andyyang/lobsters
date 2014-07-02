@@ -238,6 +238,7 @@
       new_subject: "主题:"
       new_message: "内容:"
       send: "发送消息"
+      title: "消息"
     show:
       back_to_sent_messages: "返回到消息发件箱"
       back_to_messages: "返回到消息收件箱"
@@ -250,13 +251,13 @@
       send: "发送消息"
     create:
       title: "消息"
-      has_sent: "你的消息已经被发送给%{user}."
+      has_sent: "你的消息已被发送给%{user}."
     sent:
       title: "已发送的消息"
     destroy:
       success: "消息已被删除。"
     batch_delete:
-      success: "%{count}个%{message}已被删除"
+      success: "已删除%{count}个%{message}"
       message: "消息"
     find_message:
       error: "无法查找消息"
