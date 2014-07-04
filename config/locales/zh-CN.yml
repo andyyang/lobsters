@@ -230,7 +230,7 @@
       sent: "发送时间"
       subject: "主题"
       time_ago_html: "%{time}前"
-      delete: "删除已选择的消息"
+      delete: "删除所选择的消息"
       no_messages: "你没有任何消息。"
       no_sent_messages: "你没有任何已发送的消息。"
       compose: "新建消息"
@@ -251,11 +251,11 @@
       send: "发送消息"
     create:
       title: "消息"
-      has_sent: "你的消息已被发送给%{user}."
+      success: "你的消息已发送给%{user}."
     sent:
       title: "已发送的消息"
     destroy:
-      success: "消息已被删除。"
+      success: "消息已删除。"
     batch_delete:
       success: "已删除%{count}个%{message}"
       message: "消息"
