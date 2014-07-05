@@ -175,6 +175,7 @@ en:
       success: "Your filters have been updated."
   settings:
     index:
+      title: "Account Settings"
       profile: "View Profile"
       legend: "Account Settings"
       username: "Username:"
@@ -227,6 +228,7 @@ en:
       memo: "Memo to User:"
       send_invitaion: "Send Invitation"
     show:
+      title: "User %{name}"
       send_message: "Send a Message"
       status: "Status:"
       banned_status: "Banned"
@@ -247,6 +249,10 @@ en:
       comments_count: "Comments Posted:"
       about: "About:"
       mystery: "A mystery..."
+    tree:
+      title: "Users"
+    invite:
+      title: "Pass Along an Invitation"
   messages:
     index:
       view_received: "View Received"

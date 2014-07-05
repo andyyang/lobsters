@@ -2,7 +2,7 @@ class SettingsController < ApplicationController
   before_filter :require_logged_in_user
 
   def index
-    @title = "Account Settings"
+    @title = t("settings.index.title")
 
     @edit_user = @user.dup
   end

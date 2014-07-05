@@ -153,6 +153,7 @@
        success: "过滤选择项已经更新。"
   settings:
     index:
+      title: "帐户设置"
       profile: "我的主页"
       legend: "帐户设置"
       username: "用户名:"
@@ -198,6 +199,7 @@
       memo: "发送给用户的消息:"
       send_invitaion: "发送邀请"
     show:
+      title: "用户%{name}"
       send_message: "发送消息"
       status: "状态:"
       banned_status: "冻结"
@@ -218,6 +220,10 @@
       comments_count: "发布评论:"
       about: "个人介绍:"
       mystery: "一个谜..."
+    tree:
+      title: "用户"
+    invite:
+      title: "传递邀请"
   messages:
     index:
       view_received: "收件箱"
