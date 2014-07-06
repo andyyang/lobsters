@@ -51,6 +51,9 @@
       url: "URL:"
       url_note: "能够核实你的身份的URL(个人网站，微博，Github账号等。)"
       request_invitation: "请求邀请"
+    create:
+      success: "已成功将邀请发送给%{email}."
+      error: "无法发送邀请，请确认e-mail地址是有效的"
   stories:
     listdetail:
       story_removed: "帖子已被%{user}删除"

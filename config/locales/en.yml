@@ -59,6 +59,9 @@ en:
       url: "URL:"
       url_note: "URL to verify you (Personal website, Github account, etc.)"
       request_invitation: "Request Invitation"
+    create:
+      success: "Successfully e-mailed invitation to %{email}."
+      error: "Could not send invitation, verify the e-mail address is valid."
   stories:
     listdetail:
       story_removed: "Story removed by %{user}"
