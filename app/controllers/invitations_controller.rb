@@ -12,15 +12,14 @@ class InvitationsController < ApplicationController
 
   def confirm_email
     if !(ir = InvitationRequest.where(:code => params[:code].to_s).first)
-      flash[:error] = "Invalid or expired invitation request"
+      flash[:error] = t("invitations.confirm_email.error")
       return redirect_to "/invitations/request"
     end
 
     ir.is_verified = true
     ir.save!
 
-    flash[:success] = "Your invitiation request has been validated and " <<
-      "will now be shown to other logged-in users."
+    flash[:success] = t("invitations.confirm_email.success")
     return redirect_to "/invitations/request"
   end
 
@@ -52,8 +51,7 @@ class InvitationsController < ApplicationController
     @invitation_request.ip_address = request.remote_ip
 
     if @invitation_request.save
-      flash[:success] = "You have been e-mailed a confirmation to " <<
-        params[:invitation_request][:email].to_s << "."
+      flash[:success] = t("invitations.create_by_request.success", email: params[:invitation_request][:email].to_s) 
       return redirect_to "/invitations/request"
     else
       render :action => :build
@@ -62,7 +60,7 @@ class InvitationsController < ApplicationController
 
   def send_for_request
     if !(ir = InvitationRequest.where(:code => params[:code].to_s).first)
-      flash[:error] = "Invalid or expired invitation request"
+      flash[:error] = t("invitations.send_for_request.error")
       return redirect_to "/invitations"
     end
 
@@ -73,8 +71,7 @@ class InvitationsController < ApplicationController
     i.save!
     i.send_email
     ir.destroy!
-    flash[:success] = "Successfully e-mailed invitation to " <<
-      ir.name.to_s << "."
+    flash[:success] = t("invitations.send_for_request.success", name: ir.name.to_s)
 
     return redirect_to "/invitations"
   end
@@ -85,13 +82,12 @@ class InvitationsController < ApplicationController
     end
 
     if !(ir = InvitationRequest.where(:code => params[:code].to_s).first)
-      flash[:error] = "Invalid or expired invitation request"
+      flash[:error] = t("invitations.delete_request.error")
       return redirect_to "/invitations"
     end
 
     ir.destroy!
-    flash[:success] = "Successfully deleted invitation request from " <<
-      ir.name.to_s << "."
+    flash[:success] = t("invitations.delete_request.success", name: ir.name.to_s) 
 
     return redirect_to "/invitations"
   end
