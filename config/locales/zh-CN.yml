@@ -51,6 +51,18 @@
       url: "URL:"
       url_note: "能够核实你的身份的URL(个人网站，微博，Github账号等。)"
       request_invitation: "请求邀请"
+    index:
+      legend: "邀请请求"
+      instruction: "这些用户提出了请求，他们的e-mail地址已被验证。如果你认识他们，请给他们发送邀请并移除原请求。
+          版主会清除垃圾信息。"
+      datetime: "日期/时间"
+      name: "名字"
+      memo: "备注"
+      invite: "发送邀请"
+      invite_confirm: "确认邀请这个用户并移除原请求？"
+      delete: "删除"
+      delete_confirm: "确认删除这个请求？" 
+      no_requests: "无请求"
     create:
       success: "已成功将邀请发送给%{email}."
       error: "无法发送邀请，请确认e-mail地址是有效的"

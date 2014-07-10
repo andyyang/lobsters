@@ -68,7 +68,7 @@ en:
       name: "Name"
       memo: "Memo"
       invite: "Send Invitation"
-      Invite_confirm: "Are you sure you want to invite this person and remove this request?"
+      invite_confirm: "Are you sure you want to invite this person and remove this request?"
       delete: "Delete"
       delete_confirm: "Are you sure you want to delete this request?" 
       no_requests: "No invitation requests"
