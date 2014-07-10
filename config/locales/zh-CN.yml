@@ -50,9 +50,9 @@
       email: "E-mail地址:"
       url: "URL:"
       url_note: "能够核实你的身份的URL(个人网站，微博，Github账号等。)"
-      request_invitation: "请求邀请"
+      request_invitation: "发送请求"
     index:
-      legend: "邀请请求"
+      legend: "邀请注册的请求"
       instruction: "这些用户提出了请求，他们的e-mail地址已被验证。如果你认识他们，请给他们发送邀请并移除原请求。
           版主会清除垃圾信息。"
       datetime: "日期/时间"
@@ -70,7 +70,7 @@
       success: "你的请求已生效，其他已登录的用户将会看见你的请求。"
       error: "无效或者过期的请求。"
     create_by_request:
-      success: "你已经向%{email}发送了一个验证邮件。"
+      success: "已向%{email}发送了一个验证邮件。"
     send_for_request:
       error: "无效或者过期的请求。"
       success: "已向%{name}发送了邀请。"
