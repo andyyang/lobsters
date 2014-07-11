@@ -323,3 +323,6 @@ en:
       message: "message"
     find_message:
       error: "Could not find message."
+  invitation_request_mailer:
+    invitation_request:
+      subject: "[%{application}] Confirm your invitation request to %{application}"
