@@ -1,0 +1,13 @@
+<%= @invitation_request.email %>，你好。
+
+<%= @invitation_request.ip_address %>的用户向<%= Rails.application.name %>提交了邀请注册的请求。
+
+  名字: <%= @invitation_request.name %>
+  E-mail: <%= @invitation_request.email %> (该E-mail地址不会显示给其他用户)
+  备注: <%= @invitation_request.memo %>
+
+如果这是你发出的请求，请访问以下URL以确认该请求并向其他已登录的用户显示你的请求。
+
+  <%= root_url %>invitations/confirm/<%= @invitation_request.code %>
+
+如果这不是你发出的请求，请删除这个消息。
