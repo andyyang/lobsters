@@ -1,0 +1,7 @@
+<%= @invitation.email %>，你好。
+
+用户<%= @invitation.user.username %>邀请你注册<%= Rails.application.name %> (<%= root_url %>)<%= @invitation.memo.present? ? raw("\n\n   #{@invitation.memo}") : "" %>
+
+如果接受该邀请并创建帐户，请访问以下网址：
+
+<%= root_url %>invitations/<%= @invitation.code %>
