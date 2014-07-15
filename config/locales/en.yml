@@ -326,3 +326,6 @@ en:
   invitation_request_mailer:
     invitation_request:
       subject: "[%{application}] Confirm your invitation request to %{application}"
+  invitation_mailer:
+    invitation:
+      subject: "[%{application}] You have been invited to %{application}"

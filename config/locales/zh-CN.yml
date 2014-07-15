@@ -295,7 +295,10 @@
       error: "无法查找消息"
   invitation_request_mailer:
     invitation_request:
-      subject: "[%{application}] 确认你发出的邀请注册的请求"
+      subject: "[%{application}] 确认邀请注册%{application}的请求"
+  invitation_mailer:
+    invitation:
+      subject: "[%{application}] 邀请注册%{application}"
   activerecord:
     models:
       story: "帖子"
