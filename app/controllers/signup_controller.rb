@@ -43,7 +43,7 @@ class SignupController < ApplicationController
     if @new_user.save
       @invitation.destroy
       session[:u] = @new_user.session_token
-      flash[:success] = t("signup.signup.title", application: Rails.application.name, user: @new_user.username) 
+      flash[:success] = t("signup.signup.welcome", application: Rails.application.name, user: @new_user.username) 
 
       Countinual.count!("#{Rails.application.shortname}.users.created", "+1")
 
