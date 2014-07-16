@@ -329,3 +329,15 @@ en:
   invitation_mailer:
     invitation:
       subject: "[%{application}] You have been invited to %{application}"
+  signup:
+    index:
+      signed_up: "You are already signed up."
+      title: "Signup"
+    invited:
+      signed_up: "You are already signed up."
+      invalid_invitation: "Invalid or expired invitation"
+      title: "Signup"
+    signup:
+      invalid_invitation: "Invalid or expired invitation."
+      title: "Signup"
+      welcome: "Welcome to %{application}, %{user}!"

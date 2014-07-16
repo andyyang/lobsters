@@ -299,6 +299,18 @@
   invitation_mailer:
     invitation:
       subject: "[%{application}] 邀请注册%{application}"
+  signup:
+    index:
+      signed_up: "你已注册。"
+      title: "注册"
+    invited:
+      signed_up: "你已注册。"
+      invalid_invitation: "无效或过期的邀请。"
+      title: "注册"
+    signup:
+      invalid_invitation: "无效或过期的邀请。"
+      title: "注册"
+      welcome: "%{user}，欢迎来到%{application}！"
   activerecord:
     models:
       story: "帖子"
