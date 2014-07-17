@@ -40,7 +40,7 @@
   <span class="d">
     <%= t(".time_ago_html", time: raw(time_ago_in_words_label(@showing_user.created_at))) %>
     <% if @showing_user.invited_by_user %>
-      <%= t(".invitation_from", user: link_to(@showing_user.invited_by_user.try(:username),
+      <%= t(".invitation_from_html", user: link_to(@showing_user.invited_by_user.try(:username),
         @showing_user.invited_by_user)) %>
     <% end %>
   </span>
