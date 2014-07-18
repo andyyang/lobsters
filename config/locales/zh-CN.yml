@@ -303,6 +303,9 @@
     index:
       signed_up: "你已注册。"
       title: "注册"
+      legend: "注册"
+      hint_html: "当前只有通过邀请才能注册。如果你认识本站的%{user}，请让他们给你发送邀请。"
+      user: "用户"
     invited:
       signed_up: "你已注册。"
       invalid_invitation: "无效或过期的邀请。"

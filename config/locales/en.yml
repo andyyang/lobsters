@@ -333,6 +333,11 @@ en:
     index:
       signed_up: "You are already signed up."
       title: "Signup"
+      legend: "Create an Account"
+      hint_html: "Signup is currently by invitation only to combat spam and increase
+        accountability.  If you know %{user} of the site,
+        ask them for an invitation."
+      user: "a current user"
     invited:
       signed_up: "You are already signed up."
       invalid_invitation: "Invalid or expired invitation"
