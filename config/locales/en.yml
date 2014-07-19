@@ -362,3 +362,9 @@ en:
       invalid_invitation: "Invalid or expired invitation."
       title: "Signup"
       welcome: "Welcome to %{application}, %{user}!"
+    invite:
+      legend: "Pass Along an Invitation"
+      hint_html: "This community can only grow when members invite new users, just as
+        <strong>%{user}</strong> invited you.
+        Take a moment and invite someone you know."
+      skip: "Skip"

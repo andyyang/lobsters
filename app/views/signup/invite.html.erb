@@ -1,12 +1,10 @@
 <div class="box wide">
   <div class="legend">
-    Pass Along an Invitation
+    <%= t(".legend") %>
   </div>
 
   <p>
-  This community can only grow when members invite new users, just as
-  <strong><%= @user.invited_by_user.try(:username) %></strong> invited you.
-  Take a moment and invite someone you know.
+    <%= t(".hint_html", user: @user.invited_by_user.try(:username)) %>
   </p>
 
   <%= render :partial => "users/invitationform",
@@ -15,6 +13,6 @@
   or
 
   <p>
-  <%= button_to "Skip", "/", :method => :get %>
+  <%= button_to t(".skip"), "/", :method => :get %>
   </p>
 </div>

@@ -328,6 +328,10 @@
       invalid_invitation: "无效或过期的邀请。"
       title: "注册"
       welcome: "%{user}，欢迎来到%{application}！"
+    invite:
+      legend: "传递邀请"
+      hint_html: "我们的社区只通过成员们邀请新用户来实现成长，就如同<strong>%{user}</strong>邀请了你。请花一点时间来邀请你的朋友。"
+      skip: "Skip"
   activerecord:
     models:
       story: "帖子"
