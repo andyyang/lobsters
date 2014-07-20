@@ -362,6 +362,7 @@
   activerecord:
     models:
       story: "帖子"
+      user: "用户帐户"
     attributes:
       story:
         title: "标题"
@@ -369,3 +370,7 @@
         url: "网址"
       comment:
         comment: "评论"
+      user:
+        username: "用户名"
+        password: "密码"
+        password_confirmation: "确认密码"
