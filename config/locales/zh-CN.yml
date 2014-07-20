@@ -93,18 +93,45 @@
       comment: "评论" 
       comments: "评论" 
       discuss: "讨论"
+    create:
+      title: "发布新帖"
+    destroy:
+      error: "你不能编辑这个帖子。"
     new:
+      title: "发布新帖"
+      success: "其他用户最近已提交过这个URL。"
       legend: "发布新帖"
       markdown: "支持Markdown格式"
       submit: "发布"
       preview: "预览"
     edit:
+      title: "编辑帖子"
+      error: "你不能编辑这个帖子。"
       legend: "编辑帖子"
       reason: "修改原因:"
       markdown: "支持Markdown格式"
       save: "保存"
       or: "或"
       cancel: "取消编辑"
+    show:
+      removed_title: "[帖子已删除]"
+    undelete:
+      error: "你不能编辑这个帖子。"
+    update:
+      error: "你不能编辑这个帖子。"
+    unvote:
+      no_story: "没有这个帖子"
+      ok: "成功"
+    upvote:
+      no_story: "没有这个帖子"
+      ok: "成功"
+    downvote:
+      no_story: "没有这个帖子"
+      invalid_reason: "无效的原因"
+      no_downvote: "不允许反对票"
+      ok: "成功"
+    find_user_story:
+      error: "没有这个帖子或者你无权管理它。"
     form:
       url: "网址:"
       fetch_title: "获取标题"

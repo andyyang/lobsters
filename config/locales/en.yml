@@ -102,18 +102,45 @@ en:
       comment: "comment"
       comments: "comments"
       discuss: "discuss"
+    create:
+      title: "Submit Story"
+    destroy:
+      error: "You cannot edit that story."
     new:
+      title: "Submit Story"
+      success: "This URL has already been submitted recently."
       legend: "Submit a Story"
       markdown: "Markdown formatting available"
       submit: "Submit"
       preview: "Preview"
     edit:
+      title: "Edit Story"
+      error: "You cannot edit that story."
       legend: "Edit Story"
       reason: "Mod Reason:"
       markdown: "Markdown formatting available"
       save: "Save"
       or: "or"
       cancel: "cancel editing"
+    show:
+      removed_title: "[Story removed]"
+    undelete:
+      error: "You cannot edit that story."
+    update:
+      error: "You cannot edit that story."
+    unvote:
+      no_story: "can't find story"
+      ok: "ok"
+    upvote:
+      no_story: "can't find story"
+      ok: "ok"
+    downvote:
+      no_story: "can't find story"
+      invalid_reason: "invalid reason"
+      no_downvote: "not permitted to downvote"
+      ok: "ok"
+    find_user_story:
+      error: "Could not find story or you are not authorized to manage it."
     form:
       url: "URL:"
       fetch_title: "Fetch Title"
