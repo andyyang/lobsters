@@ -243,6 +243,11 @@
       verify_password: "验证密码:"
       delete_submit: "是的，删除我的帐户"
       invite_new_user: "邀请新用户"
+    delete_account:
+      success: "你的帐户已删除。"
+      error: "密码校验失败。"
+    update:
+      success: "帐户设置更新成功。"
   users:
     invitationform:
       notice_html: "对邀请用户的数量没有限制，但是你所邀请的用户将在%{user_tree} 中与你的帐户相关联，如果这些用户造成某些问题，

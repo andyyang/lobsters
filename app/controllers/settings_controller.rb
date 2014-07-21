@@ -11,11 +11,11 @@ class SettingsController < ApplicationController
     if @user.try(:authenticate, params[:user][:password].to_s)
       @user.delete!
       reset_session
-      flash[:success] = "Your account has been deleted."
+      flash[:success] = t("settings.delete_account.success")
       return redirect_to "/"
     end
 
-    flash[:error] = "Your password could not be verified."
+    flash[:error] = t("settings.delete_account.error")
     return redirect_to settings_url
   end
 
@@ -23,7 +23,7 @@ class SettingsController < ApplicationController
     @edit_user = @user.clone
 
     if @edit_user.update_attributes(user_params)
-      flash.now[:success] = "Successfully updated settings."
+      flash.now[:success] = t("settings.update.success")
       @user = @edit_user
     end
 
