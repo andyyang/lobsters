@@ -400,3 +400,6 @@ en:
         <strong>%{user}</strong> invited you.
         Take a moment and invite someone you know."
       skip: "Skip"
+  moderations:
+    index:
+      title: "Moderation Log"
