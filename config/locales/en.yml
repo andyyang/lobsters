@@ -403,3 +403,13 @@ en:
   moderations:
     index:
       title: "Moderation Log"
+      legend: "Moderation Log"
+      datetime: "Date/Time"
+      moderator: "Moderator"
+      changes_reason: "Story/Comment/User, Changes, Reason"
+      story: "Story: %{story}"
+      comment: "Comment on %{story}"
+      user: "User %{user}"
+      action: "Action"
+      reason: "Reason"
+      page: "Page %{page_no}"

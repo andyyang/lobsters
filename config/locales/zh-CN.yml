@@ -367,6 +367,16 @@
   moderations:
     index:
       title: "管理日志"
+      legend: "管理日志"
+      datetime: "日期/时间"
+      moderator: "版主"
+      changes_reason: "帖子/评论/用户，变动，原因"
+      story: "帖子: %{story}"
+      comment: "对%{story}的评论"
+      user: "用户%{user}"
+      action: "行动"
+      reason: "原因"
+      page: "第%{page_no}页"
   activerecord:
     models:
       story: "帖子"
