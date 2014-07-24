@@ -132,6 +132,8 @@
       ok: "成功"
     find_user_story:
       error: "没有这个帖子或者你无权管理它。"
+    log_moderation:
+      all_changes: "将%{attribute}由%{before}改为%{after}"
     form:
       url: "网址:"
       fetch_title: "获取标题"
@@ -371,16 +373,17 @@
       datetime: "日期/时间"
       moderator: "版主"
       changes_reason: "帖子/评论/用户，变动，原因"
-      story: "帖子: %{story}"
-      comment: "对%{story}的评论"
-      user: "用户%{user}"
-      action: "行动"
-      reason: "原因"
+      story: "帖子: %{title}"
+      comment: "对%{title}的评论"
+      user: "用户%{name}"
+      action: "操作:"
+      reason: "原因:"
       page: "第%{page_no}页"
   activerecord:
     models:
       story: "帖子"
       user: "用户帐户"
+      message: "消息"
     attributes:
       story:
         title: "标题"
@@ -392,3 +395,6 @@
         username: "用户名"
         password: "密码"
         password_confirmation: "确认密码"
+      message:
+        recipient: "收件人"
+        subject: "主题"

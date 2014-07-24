@@ -141,6 +141,8 @@ en:
       ok: "ok"
     find_user_story:
       error: "Could not find story or you are not authorized to manage it."
+    log_moderation:
+      all_changes: "changed %{attribute} from %{before} to %{after}"
     form:
       url: "URL:"
       fetch_title: "Fetch Title"
@@ -407,9 +409,9 @@ en:
       datetime: "Date/Time"
       moderator: "Moderator"
       changes_reason: "Story/Comment/User, Changes, Reason"
-      story: "Story: %{story}"
-      comment: "Comment on %{story}"
-      user: "User %{user}"
-      action: "Action"
-      reason: "Reason"
+      story: "Story: %{title}"
+      comment: "Comment on %{title}"
+      user: "User %{name}"
+      action: "Action:"
+      reason: "Reason:"
       page: "Page %{page_no}"
