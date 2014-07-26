@@ -28,6 +28,7 @@ en:
       filters: "Filters"
   login:
     index:
+      title: "Login"
       login: "Login"
       email: "E-mail or Username:"
       password: "Password:"
@@ -39,10 +40,19 @@ en:
               accountability.  If you know %{current_user} of the site,
               ask them for an invitation or %{request_invitation}."
     forgot_password:
+      title: "Reset Password"
       reset: "Reset Password"
       email: "E-mail or Username:"
       note: "If you've forgotten your password, enter your e-mail address or username
              below and instructions will be e-mailed to you."
+    login:
+      error: "Invalid e-mail address and/or password."
+    reset_password:
+      error: "Invalid e-mail address or username."
+      success: "Password reset instructions have been e-mailed to you."
+    set_new_password:
+      title: "Reset Password"
+      error: "Invalid reset token.  It may have already been used or you may have copied it incorrectly."
   invitations:
     build:
       request: "Request an Invitation"

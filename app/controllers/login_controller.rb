@@ -10,7 +10,7 @@ class LoginController < ApplicationController
   end
 
   def index
-    @title = "Login"
+    @title = t("login.index.title")
     render :action => "index"
   end
 
@@ -27,12 +27,12 @@ class LoginController < ApplicationController
       return redirect_to "/"
     end
 
-    flash.now[:error] = "Invalid e-mail address and/or password."
+    flash.now[:error] = t("login.login.error")
     index
   end
 
   def forgot_password
-    @title = "Reset Password"
+    @title = t("login.forgot_password.title")
     render :action => "forgot_password"
   end
 
@@ -41,24 +41,22 @@ class LoginController < ApplicationController
       params[:email].to_s).first
 
     if !@found_user
-      flash.now[:error] = "Invalid e-mail address or username."
+      flash.now[:error] = t("login.reset_password.error")
       return forgot_password
     end
 
     @found_user.initiate_password_reset_for_ip(request.remote_ip)
 
-    flash.now[:success] = "Password reset instructions have been e-mailed " <<
-      "to you."
+    flash.now[:success] = t("login.reset_password.success")
     return index
   end
 
   def set_new_password
-    @title = "Reset Password"
+    @title = t("login.set_new_password.title")
 
     if params[:token].blank? ||
     !(@reset_user = User.where(:password_reset_token => params[:token].to_s).first)
-      flash[:error] = "Invalid reset token.  It may have already been " <<
-        "used or you may have copied it incorrectly."
+      flash[:error] = t("login.set_new_password.error")
       return redirect_to forgot_password_url
     end
 

@@ -280,8 +280,13 @@ class Story < ActiveRecord::Base
       m.action = "undeleted story"
     else
       m.action = all_changes.map do |k,v| 
+        if I18n.locale.to_s == "en"
+          attribute = k
+        else
+          attribute = I18n.t('activerecord.attributes.story.'+k)
+        end 
 
-        I18n.t("stories.log_moderation.all_changes", attribute: I18n.t('activerecord.attributes.story.'+k), 
+        I18n.t("stories.log_moderation.all_changes", attribute: attribute, 
           before: v[0].inspect, after: v[1].inspect) 
 
         #"changed #{k} from #{v[0].inspect} " << "to #{v[1].inspect}" 

@@ -25,6 +25,7 @@
       messages: "消息"
   login:
     index:
+      title: "登录"
       login: "登录"
       email: "E-mail或用户名:"
       password: "密码:"
@@ -35,9 +36,18 @@
       signup_html: "还不是用户吗？现在只能通过邀请才能注册。如果你认识本站的%{current_user}，
               请让他向你发出邀请或者%{request_invitation}。"
     forgot_password:
+      title: "重置密码"
       reset: "重置密码"
       email: "E-mail或用户名:"
-      note: "如果你忘记了密码，请在下方输入你的E-mail或者用户名，我们会将后续的操作步骤发送到你的邮箱。"
+      note: "如果你忘记了密码，请在下方输入你的E-mail地址或者用户名，我们会将后续的操作方法发送到你的邮箱。"
+    login:
+      error: "错误的E-maild地址或密码。"
+    reset_password:
+      error: "错误的E-mail地址或用户名。"
+      success: "重置密码的操作方法已发到你的E-mail邮箱。"
+    set_new_password:
+      title: "重置密码"
+      error: "无效的重置密码链接。这个链接已被使用或者拷贝错误。"
   invitations:
     build:
       request: "请求邀请"
