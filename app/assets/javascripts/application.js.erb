@@ -159,7 +159,7 @@ var _Lobsters = Class.extend({
   },
 
   moderateStory: function(link) {
-    var reason = prompt("Moderation reason:");
+    var reason = prompt("<%= I18n.t('moderations.moderate_story.reason') %>");
     if (reason == null || reason == "")
       return false;
 

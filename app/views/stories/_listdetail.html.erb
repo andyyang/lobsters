@@ -22,7 +22,7 @@ class="story <%= story.vote == 1 ? "upvoted" : (story.vote == -1 ?
       <% end %>
       <% if story.is_gone? %>
         [<%= t(".story_removed", user: (story.is_moderated? ? t(".moderator") :
-          t(".original submitter")) )%>]
+          t(".submitter")) )%>]
       <% end %>
     </span>
     <% if story.can_be_seen_by_user?(@user) %>

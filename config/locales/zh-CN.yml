@@ -1,5 +1,4 @@
 "zh-CN":
-  home: "首页"
   newest: "最新"
   threads: "我的评论"
   story_new: "发布新帖"
@@ -20,9 +19,13 @@
   your_threads: "我的评论"
   layouts:
     application:
+      home: "首页"
       comments: "评论"
       filters: "筛选"
       messages: "消息"
+  home:
+    index:
+      page: "第%{page_no}页"
   login:
     index:
       title: "登录"
@@ -144,6 +147,8 @@
       error: "没有这个帖子或者你无权管理它。"
     log_moderation:
       all_changes: "将%{attribute}由%{before}改为%{after}"
+      delete_story: "删除帖子"
+      undeleted_story: "恢复已删除的帖子"
     form:
       url: "网址:"
       fetch_title: "获取标题"
@@ -343,6 +348,9 @@
   invitation_mailer:
     invitation:
       subject: "[%{application}] 邀请注册%{application}"
+  password_reset_mailer:
+    password_reset_link:
+      subject: "[%{application}] 重置你的密码"
   signup:
     index:
       signed_up: "你已注册。"
@@ -389,6 +397,8 @@
       action: "操作:"
       reason: "原因:"
       page: "第%{page_no}页"
+    moderate_story:
+      reason: "修改原因:"
   activerecord:
     models:
       story: "帖子"
@@ -399,6 +409,7 @@
         title: "标题"
         description: "描述"
         url: "网址"
+        markeddown_description: "markeddown格式的描述"
       comment:
         comment: "评论"
       user:

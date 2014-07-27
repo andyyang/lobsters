@@ -275,11 +275,11 @@ class Story < ActiveRecord::Base
     m.story_id = self.id
 
     if all_changes["is_expired"] && self.is_expired?
-      m.action = "deleted story"
+      m.action = I18n.t('stories.log_moderation.delete_story')
     elsif all_changes["is_expired"] && !self.is_expired?
-      m.action = "undeleted story"
+      m.action = I18n.t('stories.log_moderation.undeleted_story')
     else
-      m.action = all_changes.map do |k,v| 
+      m.action = all_changes.reject {|k,v| k == 'markeddown_description' } .map do |k,v| 
         if I18n.locale.to_s == "en"
           attribute = k
         else

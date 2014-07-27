@@ -7,7 +7,7 @@
   <% if @page && @page > 1 %>
     <a href="<%= @tag ? "/t/#{@tag.tag}" : (@newest ? "/newest" +
       (@for_user ? "/#{@for_user}" : "") : "") %><%= @page == 2 ? "/" :
-      "/page/#{@page - 1}" %>">&lt;&lt; Page <%= @page - 1 %></a>
+      "/page/#{@page - 1}" %>">&lt;&lt; <%= t(".page", page_no: @page - 1) %></a>
   <% end %>
 
   <% if @show_more %>
@@ -15,7 +15,6 @@
       |
     <% end %>
     <a href="<%= @tag ? "/t/#{@tag.tag}" : (@newest ? "/newest" +
-      (@for_user ? "/#{@for_user}" : "") : "") %>/page/<%= @page + 1 %>">Page
-      <%= @page + 1 %> &gt;&gt;</a>
+      (@for_user ? "/#{@for_user}" : "") : "") %>/page/<%= @page + 1 %>"><%= t(".page", page_no: @page + 1) %> &gt;&gt;</a>
   <% end %>
 </div>

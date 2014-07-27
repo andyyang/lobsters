@@ -6,9 +6,16 @@ class PasswordReset < ActionMailer::Base
     @user = user
     @ip = ip
 
+    if I18n.locale.to_s == "zh-CN"
+      template_name = 'password_reset_link_zh-cn'
+    else
+      template_name = 'password_reset_link'
+    end
+
     mail(
       :to => user.email,
-      :subject => "[#{Rails.application.name}] Reset your password"
+      :subject => t("password_reset_mailer.password_reset_link.subject", application: Rails.application.name),
+      template_name: template_name
     )
   end
 end

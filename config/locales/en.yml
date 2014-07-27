@@ -2,7 +2,6 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  home: "Home"
   newest: "Newest"
   threads: "Your Threads"
   story_new: "Submit Story"
@@ -24,8 +23,12 @@ en:
   your_threads: "Your Threads"
   layouts:
     application:
+      home: "Home"
       comments: "Comments"
       filters: "Filters"
+  home:
+    index:
+      page: "Page %{page_no}"
   login:
     index:
       title: "Login"
@@ -153,6 +156,8 @@ en:
       error: "Could not find story or you are not authorized to manage it."
     log_moderation:
       all_changes: "changed %{attribute} from %{before} to %{after}"
+      delete_story: "deleted story"
+      undeleted_story: "undeleted story"
     form:
       url: "URL:"
       fetch_title: "Fetch Title"
@@ -373,6 +378,9 @@ en:
   invitation_mailer:
     invitation:
       subject: "[%{application}] You have been invited to %{application}"
+  password_reset_mailer:
+    password_reset_link:
+      subject: "[%{application}] Reset your password"
   signup:
     index:
       signed_up: "You are already signed up."
@@ -425,3 +433,5 @@ en:
       action: "Action:"
       reason: "Reason:"
       page: "Page %{page_no}"
+    moderate_story:
+      reason: "Moderation reason:"
