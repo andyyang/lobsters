@@ -56,6 +56,11 @@ en:
     set_new_password:
       title: "Reset Password"
       error: "Invalid reset token.  It may have already been used or you may have copied it incorrectly."
+      legend: "Set New Password"
+      username: "Username:"
+      new_password: "New Password:"
+      new_password_again: "(Again):"
+      set_new_password: "Set New Password"
   invitations:
     build:
       request: "Request an Invitation"
