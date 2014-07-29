@@ -29,6 +29,18 @@ en:
   home:
     index:
       page: "Page %{page_no}"
+      rss_title: "Private feed for %{username}"
+    newest:
+      title: "Newest Stories"
+      rss_title: " - Private feed for %{username}"
+    newest_by_user:
+      title: "Newest Stories by %{username}"
+    recent:
+      title: "Recent Stories"
+    privacy:
+      text: "You apparently have no privacy."
+    about:
+      text: "A mystery."
   login:
     index:
       title: "Login"
