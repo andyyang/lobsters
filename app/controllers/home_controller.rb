@@ -24,7 +24,7 @@ class HomeController < ApplicationController
       format.html { render :action => "index" }
       format.rss {
         if @user && params[:token].present?
-          @title = "Private feed for #{@user.username}"
+          @title = t("home.index.rss_title", username: @user.username)
         end
 
         render :action => "rss", :layout => false
@@ -36,7 +36,7 @@ class HomeController < ApplicationController
   def newest
     @stories = find_stories({ :newest => true })
 
-    @heading = @title = t(:newest_stories)
+    @heading = @title = t("home.newest.title")
     @cur_url = "/newest"
     @newest = true
 
@@ -48,7 +48,7 @@ class HomeController < ApplicationController
       format.html { render :action => "index" }
       format.rss {
         if @user && params[:token].present?
-          @title += " - Private feed for #{@user.username}"
+          @title += t("home.newest.rss_title", username: @user.username)
         end
 
         render :action => "rss", :layout => false
@@ -62,7 +62,7 @@ class HomeController < ApplicationController
 
     @stories = find_stories({ :by_user => by_user })
 
-    @heading = @title = "Newest Stories by #{by_user.username}"
+    @heading = @title = t("home.newest_by_user.title", username: by_user.username) 
     @cur_url = "/newest/#{by_user.username}"
 
     @newest = true
@@ -74,7 +74,7 @@ class HomeController < ApplicationController
   def recent
     @stories = find_stories({ :recent => true })
 
-    @heading = @title = "Recent Stories"
+    @heading = @title = t("home.recent.title")
     @cur_url = "/recent"
     @recent = true
 
@@ -105,7 +105,7 @@ class HomeController < ApplicationController
       render :action => "privacy"
     rescue
       render :text => "<div class=\"box wide\">" <<
-        "You apparently have no privacy." <<
+        t("home.privacy.text") <<
         "</div>", :layout => "application"
     end
   end
@@ -115,7 +115,7 @@ class HomeController < ApplicationController
       render :action => "about"
     rescue
       render :text => "<div class=\"box wide\">" <<
-        "A mystery." <<
+        t("home.about.text") <<
         "</div>", :layout => "application"
     end
   end

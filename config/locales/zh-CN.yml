@@ -26,6 +26,18 @@
   home:
     index:
       page: "第%{page_no}页"
+      rss_title: "%{username}的个人Feed"
+    newest:
+      title: "最近的帖子"
+      rss_title: " - %{username}的个人Feed"
+    newest_by_user:
+      title: "%{username}最近发布的帖子"
+    recent:
+      title: "近期的帖子"
+    privacy:
+      text: "这里是互联网，你没有隐私。"
+    about:
+      text: "一个谜。"
   login:
     index:
       title: "登录"
