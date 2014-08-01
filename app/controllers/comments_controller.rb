@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
   def create
     if !(story = Story.where(:short_id => params[:story_id]).first) ||
     story.is_gone?
-      return render :text => "can't find story", :status => 400
+      return render :text => t("comments.create.is_gone"), :status => 400
     end
 
     comment = story.comments.build
@@ -22,7 +22,7 @@ class CommentsController < ApplicationController
       params[:parent_comment_short_id]).first
         comment.parent_comment = pc
       else
-        return render :json => { :error => "invalid parent comment",
+        return render :json => { :error => t("comments.create.invalid_parent"),
           :status => 400 }
       end
     end
@@ -32,8 +32,7 @@ class CommentsController < ApplicationController
     (pc = Comment.where(:story_id => story.id, :user_id => @user.id,
       :parent_comment_id => comment.parent_comment_id).first)
       if (Time.now - pc.created_at) < 5.minutes
-        comment.errors.add(:comment, "^You have already posted a comment " <<
-          "here recently.")
+        comment.errors.add(:comment, t("comments.create.already_created"))
 
         return render :partial => "commentbox", :layout => false,
           :content_type => "text/html", :locals => { :comment => comment }

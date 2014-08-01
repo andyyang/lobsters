@@ -244,6 +244,10 @@ en:
       removed_by_author: "Comment removed by author"
       removed_by_moderator: "Thread removed by moderator %{moderator}"
       reason: "No reason given"
+    create:
+      is_gone: "can't find story"
+      invalid_parent: "invalid parent comment"
+      already_created: "^You have already posted a comment here recently."
   filters:
     index:
       title: "Filtered Tags"
