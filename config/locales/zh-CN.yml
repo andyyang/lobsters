@@ -15,8 +15,6 @@
   submit_story: "发布新帖"
   edit_story: "编辑帖子"
   newest_stories: "最近的帖子"
-  newest_comments: "最近的评论"
-  your_threads: "我的评论"
   layouts:
     application:
       home: "首页"
@@ -177,8 +175,8 @@
       submit: "发布到"
       bookmarklet: "为了将你正在浏览的网页更加容易地发布到%{application_name}，请将右边的按钮拖放到书签工具栏上。
         点击此按钮，将会跳到当前的发布页面，该页面会自动得到正在浏览的网页的网址和标题. "
-      text_guide: "当发布一个网址时，描述字段是可选的，应该仅在需要提供额外的背景信息和说明时才需要填写该字段。
-        解说或者意见应该作为评论来发布，这样就能与帖子区分开来，分别进行投票。" 
+      text_guide: "当发布一个网址时，描述字段是可选的，仅在需要提供额外的背景信息和说明时才填写该字段。
+        解说或者意见应该作为评论来发布，这样就能和帖子区分开，分别进行投票。" 
       title_guide: "请勿在标题中插入你的评论，但在原标题无上下文或者含义不清晰时，请修改标题。"
       change_title: "请从标题中删除无关的部分，如网站或者节点名称。"
       tags_guide: "如果没有标签适用于你将要发布的帖子，可能这个帖子不适合放在这里。请勿使用不符合帖子主题的标签。"
@@ -199,6 +197,7 @@
       url: "格式不正确"
   comments:
     index:
+      newest_comments: "最近的评论"
       page: "第%{page_no}页"
     comment:
       ago_html: "在%{create_time}前发布"
@@ -208,6 +207,9 @@
       delete: "删除"
       reply: "回复"
       story: "帖子"
+      previewed: "正在预览"
+      edited: "修改"
+      e-mailed: "通过E-mail"
     commentbox:
       post: "发布"
       update: "更新"
@@ -227,6 +229,15 @@
       is_gone: "未找到帖子"
       invalid_parent: "无效的上级评论"
       already_created: "^你刚刚在这里发过评论。"
+    controller:
+      no_comment: "未找到评论"
+      ok: "成功"
+    downvote:
+      invalid_reason: "无效的原因"
+      no_downvote: "不允许反对票"
+    threads:
+      title: "%{username}的评论"
+      your_threads: "我的评论"
   filters:
     index:
       title: "标签过滤"
@@ -420,6 +431,22 @@
       page: "第%{page_no}页"
     moderate_story:
       reason: "修改原因:"
+  vote:
+    story_reasons:
+      off_topic: "灌水"
+      low_quality: "文章差"
+      already_posted: "已发布过"
+      poorly_tagged: "标签不合适"
+      poorly_titled: "标题不合适"
+      spam: "垃圾帖"
+      cancel: "取消"
+    comment_reasons:
+      off_topic: "灌水"
+      Incorrect: "错误"
+      me_too: "效仿他人"
+      troll: "侮辱性内容"
+      spam: "垃圾帖"
+      cancel: "取消"
   activerecord:
     models:
       story: "帖子"

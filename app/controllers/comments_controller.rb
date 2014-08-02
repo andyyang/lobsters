@@ -54,7 +54,7 @@ class CommentsController < ApplicationController
 
   def edit
     if !((comment = find_comment) && comment.is_editable_by_user?(@user))
-      return render :text => "can't find comment", :status => 400
+      return render :text => t("comments.controller.no_comment"), :status => 400
     end
 
     render :partial => "commentbox", :layout => false,
@@ -63,7 +63,7 @@ class CommentsController < ApplicationController
 
   def reply
     if !(parent_comment = find_comment)
-      return render :text => "can't find comment", :status => 400
+      return render :text => t("comments.controller.no_comment"), :status => 400
     end
 
     comment = Comment.new
@@ -77,7 +77,7 @@ class CommentsController < ApplicationController
 
   def delete
     if !((comment = find_comment) && comment.is_deletable_by_user?(@user))
-      return render :text => "can't find comment", :status => 400
+      return render :text => t("comments.controller.no_comment"), :status => 400
     end
 
     comment.delete_for_user(@user)
@@ -88,7 +88,7 @@ class CommentsController < ApplicationController
 
   def undelete
     if !((comment = find_comment) && comment.is_undeletable_by_user?(@user))
-      return render :text => "can't find comment", :status => 400
+      return render :text => t("comments.controller.no_comment"), :status => 400
     end
 
     comment.undelete_for_user(@user)
@@ -99,7 +99,7 @@ class CommentsController < ApplicationController
 
   def update
     if !((comment = find_comment) && comment.is_editable_by_user?(@user))
-      return render :text => "can't find comment", :status => 400
+      return render :text => t("comments.controller.no_comment"), :status => 400
     end
 
     comment.comment = params[:comment]
@@ -120,43 +120,43 @@ class CommentsController < ApplicationController
 
   def unvote
     if !(comment = find_comment)
-      return render :text => "can't find comment", :status => 400
+      return render :text => t("comments.controller.no_comment"), :status => 400
     end
 
     Vote.vote_thusly_on_story_or_comment_for_user_because(0, comment.story_id,
       comment.id, @user.id, nil)
 
-    render :text => "ok"
+    render :text => t("comments.controller.ok")
   end
 
   def upvote
     if !(comment = find_comment)
-      return render :text => "can't find comment", :status => 400
+      return render :text => t("comments.controller.no_comment"), :status => 400
     end
 
     Vote.vote_thusly_on_story_or_comment_for_user_because(1, comment.story_id,
       comment.id, @user.id, params[:reason])
 
-    render :text => "ok"
+    render :text => t("comments.controller.ok")
   end
 
   def downvote
     if !(comment = find_comment)
-      return render :text => "can't find comment", :status => 400
+      return render :text => t("comments.controller.no_comment"), :status => 400
     end
 
     if !Vote::COMMENT_REASONS[params[:reason]]
-      return render :text => "invalid reason", :status => 400
+      return render :text => t("comments.downvote.invalid_reason"), :status => 400
     end
 
     if !@user.can_downvote?(comment)
-      return render :text => "not permitted to downvote", :status => 400
+      return render :text => t("comments.downvote.no_downvote"), :status => 400
     end
 
     Vote.vote_thusly_on_story_or_comment_for_user_because(-1, comment.story_id,
       comment.id, @user.id, params[:reason])
 
-    render :text => "ok"
+    render :text => t("comments.controller.ok")
   end
 
   def index
@@ -164,7 +164,7 @@ class CommentsController < ApplicationController
       "title=\"RSS 2.0\" href=\"/comments.rss" <<
       (@user ? "?token=#{@user.rss_token}" : "") << "\" />"
 
-    @heading = @title = t(:newest_comments)
+    @heading = @title = t("comments.index.newest_comments")
     @cur_url = "/comments"
 
     @page = 1
@@ -199,14 +199,14 @@ class CommentsController < ApplicationController
   def threads
     if params[:user]
       @showing_user = User.where(:username => params[:user]).first!
-      @heading = @title = "Threads for #{@showing_user.username}"
+      @heading = @title = t("comments.threads.title", username: @showing_user.username)
       @cur_url = "/threads/#{@showing_user.username}"
     elsif !@user
       # TODO: show all recent threads
       return redirect_to "/login"
     else
       @showing_user = @user
-      @heading = @title = t(:your_threads)
+      @heading = @title = t("comments.threads.your_threads")
       @cur_url = "/threads"
     end
 

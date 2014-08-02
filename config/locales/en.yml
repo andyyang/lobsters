@@ -19,8 +19,6 @@ en:
   submit_story: "Submit Story"
   edit_story: "Edit Story"
   newest_stories: "Newest Stories"
-  newest_comments: "Newest Comments"
-  your_threads: "Your Threads"
   layouts:
     application:
       home: "Home"
@@ -220,6 +218,7 @@ en:
       url: " is not valid"
   comments:
     index:
+      newest_comments: "Newest Comments"
       page: "Page %{page_no}"
     comment:
       ago_html: "%{create_time} ago"
@@ -229,6 +228,9 @@ en:
       delete: "delete"
       reply: "reply"
       story: "on"
+      previewed: "previewed just now"
+      edited: "edited"
+      e-mailed: "e-mailed"
     commentbox:
       post: "Post"
       update: "Update"
@@ -248,6 +250,15 @@ en:
       is_gone: "can't find story"
       invalid_parent: "invalid parent comment"
       already_created: "^You have already posted a comment here recently."
+    controller:
+      no_comment: "can't find comment"
+      ok: "ok"
+    downvote:
+      invalid_reason: "invalid reason"
+      no_downvote: "not permitted to downvote"
+    threads:
+      title: "Threads for %{username}"
+      your_threads: "Your Threads"
   filters:
     index:
       title: "Filtered Tags"
@@ -456,3 +467,19 @@ en:
       page: "Page %{page_no}"
     moderate_story:
       reason: "Moderation reason:"
+  vote:
+    story_reasons:
+      off_topic: "Off-topic"
+      low_quality: "Low Quality"
+      already_posted: "Already Posted"
+      poorly_tagged: "Poorly Tagged"
+      poorly_titled: "Poorly Titled"
+      spam: "Spam"
+      cancel: "Cancel"
+    comment_reasons:
+      off_topic: "Off-topic"
+      Incorrect: "Incorrect"
+      me_too: "Me-too"
+      troll: "Troll"
+      spam: "Spam"
+      cancel: "Cancel"

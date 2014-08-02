@@ -3,8 +3,8 @@ class Vote < ActiveRecord::Base
   belongs_to :story
 
   STORY_REASONS = {
-    "O" => "Off-topic",
-    "Q" => "Low Quality",
+    "O" => I18n.t("vote.story_reasons.off_topic"),
+    "Q" => I18n.t("vote.story_reasons.low_quality"),
     "A" => "Already Posted",
     "T" => "Poorly Tagged",
     "L" => "Poorly Titled",

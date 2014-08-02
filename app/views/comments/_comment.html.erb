@@ -25,8 +25,7 @@ class="comment <%= comment.current_vote ? (comment.current_vote[:vote] == 1 ?
     <div class="byline">
       <% if comment.previewing %>
         <a><%= comment.user.username %></a>
-        previewed
-        just now
+        <%= t(".previewed") %>
       <% else %>
         <a href="/u/<%= comment.user.username %>"
         <% if !comment.user.is_active? %>
@@ -37,9 +36,9 @@ class="comment <%= comment.current_vote ? (comment.current_vote[:vote] == 1 ?
         ><%= comment.user.username %></a>
 
         <% if comment.has_been_edited? %>
-          edited
+          <%= t(".edited") %>
         <% elsif comment.is_from_email? %>
-          e-mailed
+          <%= t(".e-mailed") %>
         <% end %>
         <%= t(".ago_html", create_time: raw(time_ago_in_words_label(comment.has_been_edited? ?
           comment.updated_at : comment.created_at).gsub(/^about /, ""))) %>
