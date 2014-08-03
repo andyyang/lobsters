@@ -1,15 +1,13 @@
 class InvitationMailer < ActionMailer::Base
+  include ApplicationHelper
+
   default :from => "#{Rails.application.name} " <<
     "<nobody@#{Rails.application.domain}>"
 
   def invitation(invitation)
     @invitation = invitation
 
-    if I18n.locale.to_s == "zh-CN"
-      template_name = 'invitation_zh-cn'
-    else
-      template_name = 'invitation'
-    end
+    template_name = template_i18n_name('invitation')
 
     mail(
       :to => invitation.email,

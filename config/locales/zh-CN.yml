@@ -21,6 +21,9 @@
       comments: "评论"
       filters: "筛选"
       messages: "消息"
+  application:
+    require_logged_in_user_or_400:
+      no_login: "未登录"
   home:
     index:
       page: "第%{page_no}页"
@@ -442,7 +445,7 @@
       cancel: "取消"
     comment_reasons:
       off_topic: "灌水"
-      Incorrect: "错误"
+      incorrect: "错误"
       me_too: "效仿他人"
       troll: "侮辱性内容"
       spam: "垃圾帖"

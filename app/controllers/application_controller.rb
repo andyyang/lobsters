@@ -63,7 +63,7 @@ class ApplicationController < ActionController::Base
     if @user
       true
     else
-      render :text => "not logged in", :status => 400
+      render :text => t("application.require_logged_in_user_or_400.no_login"), :status => 400
       return false
     end
   end

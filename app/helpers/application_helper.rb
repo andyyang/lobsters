@@ -24,4 +24,12 @@ module ApplicationHelper
         t("messages.show.moderator")
     end
   end
+
+  def template_i18n_name(name)
+    if I18n.locale.to_s == "en"
+      name
+    else
+      name + "_" + I18n.locale.to_s.downcase
+    end
+  end
 end

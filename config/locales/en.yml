@@ -24,6 +24,9 @@ en:
       home: "Home"
       comments: "Comments"
       filters: "Filters"
+  application:
+    require_logged_in_user_or_400:
+      no_login: "not logged in"
   home:
     index:
       page: "Page %{page_no}"
@@ -478,7 +481,7 @@ en:
       cancel: "Cancel"
     comment_reasons:
       off_topic: "Off-topic"
-      Incorrect: "Incorrect"
+      incorrect: "Incorrect"
       me_too: "Me-too"
       troll: "Troll"
       spam: "Spam"

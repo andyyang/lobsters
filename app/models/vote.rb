@@ -5,20 +5,20 @@ class Vote < ActiveRecord::Base
   STORY_REASONS = {
     "O" => I18n.t("vote.story_reasons.off_topic"),
     "Q" => I18n.t("vote.story_reasons.low_quality"),
-    "A" => "Already Posted",
-    "T" => "Poorly Tagged",
-    "L" => "Poorly Titled",
-    "S" => "Spam",
-    "" => "Cancel",
+    "A" => I18n.t("vote.story_reasons.already_posted"),
+    "T" => I18n.t("vote.story_reasons.poorly_tagged"),
+    "L" => I18n.t("vote.story_reasons.poorly_titled"),
+    "S" => I18n.t("vote.story_reasons.spam"),
+    "" => I18n.t("vote.story_reasons.cancel"),
   }
 
   COMMENT_REASONS = {
-    "O" => "Off-topic",
-    "I" => "Incorrect",
-    "M" => "Me-too",
-    "T" => "Troll",
-    "S" => "Spam",
-    "" => "Cancel",
+    "O" => I18n.t("vote.comment_reasons.off_topic"),
+    "I" => I18n.t("vote.comment_reasons.incorrect"),
+    "M" => I18n.t("vote.comment_reasons.me_too"),
+    "T" => I18n.t("vote.comment_reasons.troll"),
+    "S" => I18n.t("vote.comment_reasons.spam"),
+    "" => I18n.t("vote.comment_reasons.cancel"),
   }
 
   def self.votes_by_user_for_stories_hash(user, stories)

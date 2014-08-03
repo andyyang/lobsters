@@ -1,0 +1,3 @@
+  <%= word_wrap(@message.plaintext_body, :line_width => 72).gsub(/\n/, "\n  ") %>
+
+请在<%= @message.url %>答复消息。
