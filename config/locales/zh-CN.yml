@@ -386,6 +386,9 @@
   password_reset_mailer:
     password_reset_link:
       subject: "[%{application}] 重置你的密码"
+  email_message:
+    notify:
+      subject: "[%{application}] %{author}发送的消息: %{subject}"
   signup:
     index:
       signed_up: "你已注册。"

@@ -12,8 +12,8 @@ class EmailMessage < ActionMailer::Base
 
     mail(
       :to => user.email,
-      :subject => "[#{Rails.application.name}] Private Message from " <<
-        "#{message.author.username}: #{message.subject}",
+      :subject => t("email_message.notify.subject", application: Rails.application.name, 
+        author: message.author.username, subject: message.subject),
       template_name: template_name
     )
   end

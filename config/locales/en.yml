@@ -416,6 +416,9 @@ en:
   password_reset_mailer:
     password_reset_link:
       subject: "[%{application}] Reset your password"
+  email_message:
+    notify:
+      subject: "[%{application}] Private Message from %{author}: %{subject}"
   signup:
     index:
       signed_up: "You are already signed up."
