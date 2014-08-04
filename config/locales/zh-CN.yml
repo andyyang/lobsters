@@ -388,7 +388,12 @@
       subject: "[%{application}] 重置你的密码"
   email_message:
     notify:
-      subject: "[%{application}] %{author}发送的消息: %{subject}"
+      subject: "[%{application}] %{author}发送的消息：%{subject}"
+  email_reply:
+    reply:
+      subject: "[%{application}] %{user}在“%{story}”回复了你的评论"
+    mention:
+      subject: "[%{application}] %{user}在“%{story}”提到了你"
   signup:
     index:
       signed_up: "你已注册。"

@@ -419,6 +419,11 @@ en:
   email_message:
     notify:
       subject: "[%{application}] Private Message from %{author}: %{subject}"
+  email_reply:
+    reply:
+      subject: "[%{application}] Reply from %{user} on %{story}"
+    mention:
+      subject: "[%{application}] Mention from %{user} on %{story}"
   signup:
     index:
       signed_up: "You are already signed up."

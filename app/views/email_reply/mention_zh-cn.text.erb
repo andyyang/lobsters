@@ -1,0 +1,5 @@
+<%= @comment.user.username %>在如下评论中提到了你：
+
+  <%= word_wrap(@comment.plaintext_comment, :line_width => 72).gsub(/\n/, "\n  ") %>
+
+请在<%= @comment.url %>继续讨论。
