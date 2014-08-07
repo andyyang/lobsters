@@ -47,7 +47,7 @@
             "/stories/new" => t(:story_new) }) %>
         <% end %>
 
-        <% #links.merge!({ "/search" => t(:search) }) %>
+        <% links.merge!({ "/search" => t(:search) }) if false %>
 
         <% if @cur_url.present? && !links.keys.include?(@cur_url) &&
         @heading.present? %>
