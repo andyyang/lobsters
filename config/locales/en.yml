@@ -262,6 +262,12 @@ en:
     threads:
       title: "Threads for %{username}"
       your_threads: "Your Threads"
+    pushover_mentions:
+      title: "%{application} mention by %{user} on %{story}"
+      url_title: "Reply to %{user}"
+    pushover_replies:
+      title: "%{application} reply from %{user} on %{story}"
+      url_title: "Reply to %{user}"
   filters:
     index:
       title: "Filtered Tags"
@@ -407,6 +413,9 @@ en:
       message: "message"
     find_message:
       error: "Could not find message."
+    pushover_messages:
+      title:  "%{application} message from %{author}: %{subject}"
+      url_title: "Reply to %{author}"
   invitation_request_mailer:
     invitation_request:
       subject: "[%{application}] Confirm your invitation request to %{application}"

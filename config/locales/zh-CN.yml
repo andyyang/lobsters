@@ -241,6 +241,12 @@
     threads:
       title: "%{username}的评论"
       your_threads: "我的评论"
+    pushover_mentions:
+      title: "%{application} %{user}在“%{story}”提到了你"
+      url_title: "回复%{user}"
+    pushover_replies:
+      title: "%{application} %{user}在“%{story}”回复了你的评论"
+      url_title: "回复%{user}"
   filters:
     index:
       title: "标签过滤"
@@ -377,6 +383,9 @@
       message: "消息"
     find_message:
       error: "无法查找消息"
+    pushover_messages:
+      title:  "%{application} %{author}发送的消息: %{subject}"
+      url_title: "回复%{author}"
   invitation_request_mailer:
     invitation_request:
       subject: "[%{application}] 确认邀请注册%{application}的请求"

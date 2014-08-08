@@ -208,11 +208,11 @@ class Comment < ActiveRecord::Base
 
         if u.pushover_mentions?
           u.pushover!({
-            :title => "#{Rails.application.name} mention by " <<
-              "#{self.user.username} on #{self.story.title}",
+            :title => I18n.t("comments.pushover_mentions.title", application: Rails.application.name,
+              user: self.user.username, story: self.story.title),
             :message => self.plaintext_comment,
             :url => self.url,
-            :url_title => "Reply to #{self.user.username}",
+            :url_title => I18n.t("comments.pushover_mentions.url_title", user: self.user.username),
           })
         end
       end
@@ -232,11 +232,11 @@ class Comment < ActiveRecord::Base
 
       if u.pushover_replies?
         u.pushover!({
-          :title => "#{Rails.application.name} reply from " <<
-            "#{self.user.username} on #{self.story.title}",
+          :title => I18n.t("comments.pushover_replies.title", application: Rails.application.name,
+            user: self.user.username, story: self.story.title),
           :message => self.plaintext_comment,
           :url => self.url,
-          :url_title => "Reply to #{self.user.username}",
+          :url_title => I18n.t("comments.pushover_replies.url_title", user: self.user.username)
         })
       end
     end

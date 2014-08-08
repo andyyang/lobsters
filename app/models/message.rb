@@ -45,11 +45,11 @@ class Message < ActiveRecord::Base
 
     if self.recipient.pushover_messages?
       self.recipient.pushover!({
-        :title => "#{Rails.application.name} message from " <<
-          "#{self.author.username}: #{self.subject}",
+        :title =>  I18n.t("messages.pushover_messages.title", application: Rails.application.name,
+          author: self.author.username, subject: self.subject),
         :message => self.plaintext_body,
         :url => self.url,
-        :url_title => "Reply to #{self.author.username}",
+        :url_title => I18n.t("messages.pushover_messages.url_title", author: self.author.username)
       })
     end
   end
